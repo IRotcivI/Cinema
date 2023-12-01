@@ -1,10 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription et de Connexion</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(../../../../Downloads/0dfdf2b2-9ec3-40e1-b314-399de1e9c0e1.jpg);
+            background-size: cover;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+
+        .signup, .sign-in {
+            width: 45%;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.8); /* Ajoute une opacité au formulaire pour améliorer la lisibilité */
+        }
+    </style>
 </head>
 <body>
-$END$
+
+
+
+
+
+<div class="main">
+
+    <!-- Inscription -->
+    <section class="signup">
+        <h2>Inscription</h2>
+        <form method="POST" action="pdo.php">
+
+            <!-- demande du nom -->
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" id="nom" placeholder="Your Name" required>
+            <br><br>
+
+
+            <!-- demande du prenom -->
+            <label for="prenom">Prénom:</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Your Forename" required>
+            <br><br>
+
+
+            <!-- demande de l'age -->
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" placeholder="Your Age" required>
+            <br><br>
+
+
+            <!-- demande du metier -->
+            <label for="metier">Métier:</label>
+            <select name="metier" id="metier" required>
+                <option value="cadre">Cadre</option>
+                <option value="fonctionnaire">Fonctionnaire</option>
+                <option value="ouvrier">Ouvrier</option>
+                <option value="pdg">PDG</option>
+            </select>
+            <br><br>
+
+
+            <!-- demande du pays -->
+            <label for="pays">Pays de Résidence:</label>
+            <select name="pays" id="pays" required>
+                <option value="France">France</option>
+                <option value="Italie">Autre</option>
+                <option value="Espagne">France</option>
+                <option value="Angleterre">Autre</option>
+                <option value="Allemagne">France</option>
+            </select>
+            <br><br>
+            <a href="Menu.html"><button>Inscription</button></a>
+        </form>
+    </section>
+
+    <!-- Connexion -->
+    <section class="sign-in">
+        <h2>Connexion</h2>
+        <form method="POST" action="connexion.java">
+
+            <!-- demande du mdp(nom) -->
+            <label for="login-nom">Login (Nom):</label>
+            <input type="text" name="mdp_nom" id="login-nom" placeholder="Your Name" required>
+            <br><br>
+
+            <!-- demande du mdp(prenom) -->
+            <label for="login-prenom">Mot de passe (Prenom):</label>
+            <input type="password" name="mdp_prenom" id="login-prenom" placeholder="Your Forename" required>
+            <br><br>
+            <a href="Menu.html"><button>Connexion</button></a>
+
+        </form>
+    </section>
+
+</div>
+
 </body>
 </html>
