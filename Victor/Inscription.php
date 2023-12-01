@@ -15,7 +15,7 @@ $bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root
 
 //CODE
 
-$requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,tel,rue,ville,cp) VALUES (:nom,:prenom,:age,:email,:tel,:rue,:ville,:cp)');
+$requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville,cp) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville,:cp)');
 $requete->execute(array(
     'nom' => $nom,
     'prenom' => $prenom,
