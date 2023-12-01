@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selim/connexion.html" beforeDir="false" afterPath="$PROJECT_DIR$/Selim/connexion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Victor/Inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/Victor/Inscription.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +22,9 @@
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php8.1.0\php.exe" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2Yw9VfOUKroAdTzcjC14b4HtuP7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/FAYE_Vi/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur",
+    "last_opened_file_path": "C:/Users/FAYE_Vi/Desktop/Cinema",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701425799886</updated>
       <workItem from="1701425800926" duration="1865000" />
+      <workItem from="1701434036657" duration="1239000" />
     </task>
     <servers />
   </component>
