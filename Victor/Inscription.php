@@ -1,7 +1,6 @@
 <?php
 
 //VARIABLES
-
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $email = $_POST['email'];
@@ -14,7 +13,6 @@ $cp = $_POST['code_postal'];
 $bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
 
 //CODE
-
 $requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville,cp) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville,:cp)');
 $requete->execute(array(
     'nom' => $nom,
