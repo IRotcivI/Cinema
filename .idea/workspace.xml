@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Nouveau : Code php connection au site web">
-      <change beforePath="$PROJECT_DIR$/Connexion_Inscription/connexion.html" beforeDir="false" />
+    <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Ajout du mot de passe et ajustement bulle">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -94,6 +95,7 @@
       <workItem from="1701452902386" duration="2786000" />
       <workItem from="1701525153157" duration="7137000" />
       <workItem from="1701857558685" duration="465000" />
+      <workItem from="1702022222592" duration="4427000" />
     </task>
     <task id="LOCAL-00001" summary="Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné">
       <option name="closed" value="true" />
@@ -111,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701532273448</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajout du mot de passe et ajustement bulle">
+      <created>1702027091414</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702027091414</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +140,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné" />
     <MESSAGE value="Nouveau : Code php connection au site web" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nouveau : Code php connection au site web" />
+    <MESSAGE value="Ajout du mot de passe et ajustement bulle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout du mot de passe et ajustement bulle" />
   </component>
 </project>
