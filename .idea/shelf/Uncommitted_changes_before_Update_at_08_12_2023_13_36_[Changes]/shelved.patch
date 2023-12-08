@@ -1,0 +1,33 @@
+Index: Connexion_Inscription/inscription.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Inscription</title>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"form.css\">\r\n\r\n</head>\r\n<body>\r\n<form method=\"post\" action=\"Inscription.php\">\r\n<div class=\"form\">\r\n    <br>\r\n    <div class=\"title\">Inscription</div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"prenom\" class=\"input\" type=\"text\" placeholder=\" \" name=\"prenom\" />\r\n        <div class=\"cut cut-prenom\"></div>\r\n        <label for=\"prenom\" class=\"placeholder\">Prenom</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"nom\" class=\"input\" type=\"text\" placeholder=\" \" name=\"nom\" />\r\n        <div class=\"cut cut-nom\"></div>\r\n        <label for=\"nom\" class=\"placeholder\">Nom</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"email\" class=\"input\" type=\"text\" placeholder=\" \" name=\"email\" />\r\n        <div class=\"cut cut-short\"></div>\r\n        <label for=\"email\" class=\"placeholder\">Email</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"age\" class=\"input\" type=\"text\" placeholder=\" \" name=\"age\" />\r\n        <div class=\"cut cut-age\"></div>\r\n        <label for=\"age\" class=\"placeholder\">Age</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"telephone\" class=\"input\" type=\"text\" placeholder=\" \" name=\"telephone\" />\r\n        <div class=\"cut\"></div>\r\n        <label for=\"telephone\" class=\"placeholder\">Telephone</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"adresse\" class=\"input\" type=\"text\" placeholder=\" \" name=\"adresse\" />\r\n        <div class=\"cut cut-adresse\"></div>\r\n        <label for=\"adresse\" class=\"placeholder\" > Adresse</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"ville\" class=\"input\" type=\"text\" placeholder=\" \" name=\"ville\" />\r\n        <div class=\"cut cut-ville\"></div>\r\n        <label for=\"ville\" class=\"placeholder\">Ville</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n\r\n        <input id=\"mdp\" class=\"input\" type=\"text\" placeholder=\" \" name=\"mdp\" />\r\n        <div class=\"cut cut-mdp\"></div>\r\n        <label for=\"mdp\" class=\"placeholder\">Mot de passe</label>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"submit\" onclick=\"window.location.href='inscription_html.html';\">Je m'inscris</button>\r\n\r\n</div>\r\n</form>\r\n</body>\r\n</html>\r\n
+===================================================================
+diff --git a/Connexion_Inscription/inscription.html b/Connexion_Inscription/inscription.html
+--- a/Connexion_Inscription/inscription.html	
++++ b/Connexion_Inscription/inscription.html	
+@@ -3,7 +3,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <title>Inscription</title>
+-    <link rel="stylesheet" type="text/css" href="form.css">
++    <link rel="stylesheet" type="text/css" href="inscription.css">
+ 
+ </head>
+ <body>
+Index: Selim/.idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>connexion.html
+===================================================================
+diff --git a/Selim/.idea/.name b/Selim/.idea/.name
+--- a/Selim/.idea/.name	
++++ b/Selim/.idea/.name	
+@@ -1,1 +1,1 @@
+-connexion.html
+\ No newline at end of file
++test_inscription.css
+\ No newline at end of file
+diff --git a/Connexion_Inscription/form.css b/Connexion_Inscription/inscription.css
+rename from Connexion_Inscription/form.css
+rename to Connexion_Inscription/inscription.css
