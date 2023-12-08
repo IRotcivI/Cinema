@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Ajout du mot de passe et ajustement bulle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Nouveau : Code php connection au site web">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ahad/Cinema.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ahad/Cinema.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ahad/connexion.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ahad/connexion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connexion_Inscription/Cinema.html" beforeDir="false" afterPath="$PROJECT_DIR$/Connexion_Inscription/Cinema.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connexion_Inscription/connexion.css" beforeDir="false" afterPath="$PROJECT_DIR$/Connexion_Inscription/connexion.css" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Connexion_Inscription/connexion.html" beforeDir="false" />
+>>>>>>> 4e1a98d31b5b6068e5d012bd06191c6b64efa758
+>>>>>>> 832c2a63f7b85afe2fd1334182e25d351c11c794
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +63,7 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2Yw9VfOUKroAdTzcjC14b4HtuP7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
