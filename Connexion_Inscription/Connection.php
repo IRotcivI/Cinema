@@ -3,7 +3,7 @@
 //VARIABLES
 $email = $_POST['email'];
 $mdp = $_POST['mdp'];
-$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+$bdd = new PDO('mysql:host=localhost:3307;dbname=vsa_cinema;charset=utf8', 'root', '');
 
 //CODE
 $requete = $bdd->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :mdp');
