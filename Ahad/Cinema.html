@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Slide Navbar</title>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
     <link rel="stylesheet" type="text/css" href="connexion.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="main">
-    <input type="checkbox" id="chk" aria-hidden="true">
 
-    <div class="signup">
-        <form>
-            <label for="chk" aria-hidden="true">Connexion</label>
-            <input type="email" name="email" placeholder="Email" required="">
-            <input type="password" name="pswd" placeholder="Mot de passe" required="">
-            <button>Connexion</button>
-        </form>
+<div class="form">
+    <br>
+    <div class="title">Connexion</div>
+
+    <div class="input-container ic1">
+        <input id="prenom" class="input" type="text" placeholder=" " />
+        <div class="cut"></div>
+        <label for="prenom" class="placeholder">Email</label>
     </div>
+
+    <div class="input-container ic1">
+        <input id="nom" class="input" type="text" placeholder=" " />
+        <div class="cut"></div>
+        <label for="nom" class="placeholder">Mot de Passe</label>
+    </div>
+
+    <button type="text" class="submit">Se connecter</button>
+    <a href="connexion.html">Créer un compte</a>.</br>
+</form>
 
 </div>
 </body>
