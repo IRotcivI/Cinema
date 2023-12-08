@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Nouveau : Code php connection au site web">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ahad/Cinema.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ahad/Cinema.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ahad/connexion.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ahad/connexion.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Connexion_Inscription/Cinema.html" beforeDir="false" afterPath="$PROJECT_DIR$/Connexion_Inscription/Cinema.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Connexion_Inscription/connexion.css" beforeDir="false" afterPath="$PROJECT_DIR$/Connexion_Inscription/connexion.css" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Connexion_Inscription/connexion.html" beforeDir="false" />
+>>>>>>> 4e1a98d31b5b6068e5d012bd06191c6b64efa758
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
