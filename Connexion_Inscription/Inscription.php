@@ -32,7 +32,8 @@ if ($verification->rowCount() > 0){
         'ville' => $ville,
 
     ));
-    echo "Votre compte a été crée, veuilez revenir a la page de connexion !";
+    header("Location: inscription_reussi.html");
+
 }
 
 
