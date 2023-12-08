@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Nouveau : Code php connection au site web">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selim/Page Inscription/connexion.html" beforeDir="false" afterPath="$PROJECT_DIR$/Selim/Page Inscription/connexion.html" afterDir="false" />
-    </list>
+    <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Nouveau : Code php connection au site web" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +91,7 @@
       <workItem from="1701450338019" duration="2550000" />
       <workItem from="1701452902386" duration="2786000" />
       <workItem from="1701525153157" duration="7137000" />
-      <workItem from="1701857558685" duration="378000" />
+      <workItem from="1701857558685" duration="465000" />
     </task>
     <task id="LOCAL-00001" summary="Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné">
       <option name="closed" value="true" />

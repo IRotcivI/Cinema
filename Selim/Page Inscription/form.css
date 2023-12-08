@@ -3,13 +3,13 @@ body {
     background-color: #000;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     padding: 0;
-    background-image: url('https://th.bing.com/th/id/OIG.24Q9Y8RcfguU5LjxR_qR?pid=ImgGn'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-image: url('https://th.bing.com/th/id/OIG.24Q9Y8RcfguU5LjxR_qR?pid=ImgGn');
     background-size: cover;
     background-position: center;
-    font-family: Arial, sans-serif; /* Add your preferred font-family */
+    font-family: Arial, sans-serif;
 }
 
 .form {
