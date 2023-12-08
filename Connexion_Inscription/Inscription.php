@@ -1,5 +1,5 @@
 <?php
-
+var_dump($_POST);
 //VARIABLES
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
@@ -9,21 +9,32 @@ $age = $_POST['age'];
 $tel = $_POST['telephone'];
 $rue = $_POST['adresse'];
 $ville = $_POST['ville'];
-$cp = $_POST['code_postal'];
-$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+$bdd = new PDO('mysql:host=localhost:3307;dbname=vsa_cinema;charset=utf8', 'root', '');
 
 //CODE
-$requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville,cp) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville,:cp)');
-$requete->execute(array(
-    'nom' => $nom,
-    'prenom' => $prenom,
-    'email' => $email,
-    'mdp' => $mdp,
-    'age' => $age,
-    'tel' => $tel,
-    'rue' => $rue,
-    'ville' => $ville,
-    'cp' => $cp,
+
+$verification = $bdd->prepare('SELECT * FROM utilisateur WHERE email = :email');
+$verification->execute(array(
+    'email'=>$email,
 ));
-echo "Votre compte a été crée, veuilez revenir a la page de connexion !";
+if ($verification->rowCount() > 0){
+    echo 'Ce email est déja utilisé par un autre utilisateur';
+}else{
+    $requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville)');
+    $requete->execute(array(
+        'nom' => $nom,
+        'prenom' => $prenom,
+        'email' => $email,
+        'mdp' => $mdp,
+        'age' => $age,
+        'tel' => $tel,
+        'rue' => $rue,
+        'ville' => $ville,
+
+    ));
+    echo "Votre compte a été crée, veuilez revenir a la page de connexion !";
+}
+
+
+
 
