@@ -9,7 +9,7 @@ body {
     background-image: url('https://th.bing.com/th/id/OIG.24Q9Y8RcfguU5LjxR_qR?pid=ImgGn'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
-    font-family: Arial, sans-serif; /* Add your preferred font-family */
+    font-family: Arial, sans-serif;
 }
 
 .form {
@@ -25,7 +25,7 @@ body {
     color: #eee;
     font-family: sans-serif;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 150;
     margin-top: 0px;
 }
 
