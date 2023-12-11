@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background : url("https://img.freepik.com/vecteurs-premium/conception-affiche-premiere-cinema-film-fond-vecteur-cinema-ecran-cinema-ecran-blanc_165143-1170.jpg");
+}
+
+form {
+    margin: 20px;
+
+}
+
+.form {
+    max-width: 400px;
+    margin: auto;
+    background:#fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+.cut {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #ccc;
+}
+
+.placeholder {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: all 0.15s ease-out;
+}
+
+.input:focus + .cut,
+.input:not(:placeholder-shown) + .cut,
+.input:focus + .placeholder {
+    border-top: 1px solid #007bff;
+    transform: translateY(-8px);
+    color: #007bff;
+}
+
+.submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}

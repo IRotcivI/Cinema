@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur de connexion</title>
+    <link rel="stylesheet" type="text/css" href="connexion.css">
+    <style>
+        /* Add any additional styles here */
+    </style>
+</head>
+<body>
+
+<div class="form">
+    <br>
+    <div class="title">Connexion</div>
+
+    <form id="loginForm">
+        <div class="input-container ic1">
+            <input id="email" class="input" type="email" name="email" required>
+            <div class="cut"></div>
+            <label for="email" class="placeholder">Email</label>
+        </div>
+
+        <div class="input-container ic1">
+            <input id="mdp" class="input" type="password" name="password" required>
+            <div class="cut cut-mdp"></div>
+            <label for="mdp" class="placeholder">Mot de passe</label>
+        </div>
+
+        <button type="submit" class="submit">Se connecter</button>
+    </form>
+
+    <p>Vous n'avez pas de compte? <a href="../Page_inscription/inscription.html">Créer un compte</a>.</p>
+</div>
+
+<script>
+    // You can add JavaScript for form validation or other functionality here
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        // Add your form validation or other logic here
+        // Example: Validate that the email and password are not empty
+        var emailValue = document.getElementById("email").value.trim();
+        var passwordValue = document.getElementById("mdp").value.trim();
+
+        if (emailValue === "" || passwordValue === "") {
+            alert("Veuillez remplir tous les champs.");
+            event.preventDefault(); // Prevent the form from submitting
+        }
+    });
+</script>
+
+</body>
+</html>

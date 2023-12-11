@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url('https://th.bing.com/th/id/OIG.24Q9Y8RcfguU5LjxR_qR?pid=ImgGn'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-image: url('https://th.bing.com/th/id/OIG.24Q9Y8RcfguU5LjxR_qR?pid=ImgGn');
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@ body {
     background-color: #15172b;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 650px;
+    height: 800px;
     padding: 50px;
     width: 350px;
 }
@@ -78,6 +78,24 @@ body {
 
 .cut-short {
     width: 50px;
+}
+.cut-mdp {
+    width: 90px;
+}
+.cut-ville {
+    width: 40px;
+}
+.cut-adresse {
+    width: 62px;
+}
+.cut-age {
+    width: 40px;
+}
+.cut-prenom {
+    width: 60px;
+}
+.cut-nom {
+    width: 45px;
 }
 
 .input:focus ~ .cut,
