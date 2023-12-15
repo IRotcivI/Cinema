@@ -1,37 +1,21 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
-    <link rel="stylesheet" type="text/css" href="connexion.css">
-</head>
 <body>
-
-<form method="post" action="Connection.php">
-
-    <div class="form">
-        <div class="title">Connexion</div>
-
-        <div class="input-container ic1">
-            <label for="email" class="field-description">Adresse e-mail :</label>
-            <input id="email" class="input" type="email" placeholder="Entrez votre adresse e-mail" name="email" required>
-            <div class="cut"></div>
+<header>
+    <h1>Cinema VSA</h1>
+</header>
+<main>
+    <form id="login_form" class="form_class" action="Connection.php" method="post">
+        <link rel="stylesheet" type="text/css" href="connexion.css">
+        <div class="form_div">
+            <label>Login:</label>
+            <input class="field_class" type="text" placeholder="Email" name="email" autofocus>
+            <label>Mot de passe:</label>
+            <input id="pass" class="field_class" type="password" name="mdp"placeholder="Mot de passe">
+            <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Se connecter</button>
         </div>
-
-        <div class="input-container ic1">
-            <label for="mdp" class="field-description">Mot de passe :</label>
-            <input id="mdp" class="input" type="password" placeholder="Entrez votre mot de passe" name="mdp" required>
-            <div class="cut"></div>
+        <div class="info_div">
+            <p>Pas encore de compte ? <a href="inscription.html">Cliquez ici</a></p>
         </div>
-
-        <button type="submit" class="submit">Se connecter</button>
-        <a href="../../MENU/menu_html.html">Retour au menu</a>
-        <p>Vous n'avez pas de compte? <a href="../Page_inscription/inscription.html">Créer un compte</a>.</p>
-    </div>
-
-</form>
+    </form>
+</main>
 
 </body>
-</html>
-
