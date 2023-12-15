@@ -9,7 +9,7 @@ $age = $_POST['age'];
 $tel = $_POST['telephone'];
 $rue = $_POST['adresse'];
 $ville = $_POST['ville'];
-$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'vsa_base', 'AZErty7241');
+$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
 
 //CODE
 
