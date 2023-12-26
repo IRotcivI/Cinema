@@ -1,0 +1,21 @@
+<body>
+<header>
+    <h1>Cinema VSA</h1>
+</header>
+<main>
+    <form id="login_form" class="form_class" action="Connection.php" method="post">
+        <link rel="stylesheet" type="text/css" href="connexion.css">
+        <div class="form_div">
+            <label>Login:</label>
+            <input class="field_class" type="text" placeholder="Email" name="email" autofocus>
+            <label>Mot de passe:</label>
+            <input id="pass" class="field_class" type="password" name="mdp"placeholder="Mot de passe">
+            <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Se connecter</button>
+        </div>
+        <div class="info_div">
+            <p>Pas encore de compte ? <a href="inscription.html">Cliquez ici</a></p>
+        </div>
+    </form>
+</main>
+
+</body>

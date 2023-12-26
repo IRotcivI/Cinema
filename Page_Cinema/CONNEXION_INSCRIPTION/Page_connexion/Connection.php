@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 //VARIABLES
 $email = $_POST['email'];
@@ -12,8 +13,12 @@ $requete->execute(array(
     'mdp'=>$mdp,
 ));
 if ($requete->rowCount() > 0){
-    echo 'CONNECTION';
+
+    echo 'MENU';
 }
 else{
     echo 'ERREUR DE CONNECTION';
+    echo '<form action="Cinema.html">
+    <input type="submit" value="Page Connection"/><br>
+    </form>';
 }
