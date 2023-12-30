@@ -1,4 +1,5 @@
 <?php
+var_dump($_POST);
 //VARIABLES
 $bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
 $nom = $_POST['nom'];
@@ -15,3 +16,4 @@ $requete -> execute(array(
     'affiche' => $affiche,
     'realisateur' => $rea,
 ));
+header("Location: correct.html");
