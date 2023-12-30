@@ -65,8 +65,8 @@ form {
 }
 
 input[type="submit"] {
-    background-color: rgba(241, 203, 41, 0.89);
-    color: #c4c3c9ff;
+    background-color: #f1cb29;
+    color: #ffffff;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
