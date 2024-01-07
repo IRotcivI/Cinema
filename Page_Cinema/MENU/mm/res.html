@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reserv.css">
+    <title>Réservation de Film</title>
 </head>
 <body>
 
+<header>
+    <h1>Réservation de Film</h1>
+</header>
+
+<form action="res.php" method="post">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="heure">Heure :</label>
+    <input type="time" id="heure" name="heure" required>
+
+    <label for="date">Date :</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="paiement">Moyen de Paiement :</label>
+    <select id="paiement" name="paiement" required>
+        <option value="carte">Carte de crédit</option>
+        <option value="paypal">PayPal</option>
+        <!-- Ajoutez d'autres options de paiement si nécessaire -->
+    </select>
+
+    <label for="nombrePlaces">Nombre de Places :</label>
+    <input type="number" id="nbr_place" name="nbr_place" min="1" required>
+
+    <label for="salle">Salle :</label>
+    <input type="text" id="ref_salle" name="ref_salle" required>
+
+    <button type="submit">Réserver</button>
+</form>
+
 </body>
 </html>
+>
