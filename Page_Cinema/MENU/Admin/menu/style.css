@@ -1,0 +1,11 @@
+body{
+    background: #1f2029ff;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #1f2029ff;
+}

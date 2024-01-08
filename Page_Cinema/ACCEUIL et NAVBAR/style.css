@@ -1,0 +1,16 @@
+body{
+    background: url("img/popcorn-1433327_1920.jpg");
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+    .sidebar{
+        background-color: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+*{
+    font-family: 'Bebas Neue', sans-serif;
+}
