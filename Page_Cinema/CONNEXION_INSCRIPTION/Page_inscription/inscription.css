@@ -2,9 +2,10 @@
 body {
     font-family: 'Impact', fantasy;
     margin: 0;
-    background: url('https://wallpapercave.com/wp/wp1945939.jpg') center center fixed;
     background-size: cover;
-    color: rgb(15, 44, 238);; /* Couleur du texte sur l'image de fond */
+    color: rgb(0, 15, 255);; /* Couleur du texte sur l'image de fond */
+    background: url(https://www.fmsh.fr/sites/default/files/styles/w1920_extra_wide/public/media/images/Visuel-site-web-cinema.gif?itok=pCW_N1qd) no-repeat center center;
+
 
 }
 
@@ -14,9 +15,9 @@ body {
     margin: 50px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgb(53, 80, 255);
+    box-shadow: 0 0 20px rgba(141, 97, 97, 0.57);
     text-align: center;
-    background: rgba(0, 166, 255, 0.79);
+    background: rgba(26, 28, 110, 0.6);
 }
 
 /* Styles du titre */
@@ -38,7 +39,7 @@ body {
     width: 100%;
     padding: 12px;
     box-sizing: border-box;
-    border: 1px solid #ff0000;
+    border: 1px solid rgba(0, 21, 255, 0.96);
     border-radius: 6px;
     font-size: 16px;
     transition: border-color 0.3s;
@@ -86,12 +87,12 @@ body {
 .input:not(:placeholder-shown) + .cut + .placeholder {
     top: 10px;
     font-size: 12px;
-    color: #f80000;
+    color: #0015ff;
 }
 
 /* Styles du bouton de soumission */
 .submit {
-    background-color: #ff0000;
+    background-color: #1b27cc;
     color: #ffffff;
     padding: 12px 20px;
     border: none;
@@ -103,5 +104,5 @@ body {
 }
 
 .submit:hover {
-    background-color: #ff0000;
+    background-color: #002aff;
 }
