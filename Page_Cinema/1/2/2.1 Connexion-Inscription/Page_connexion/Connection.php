@@ -1,4 +1,5 @@
 <?php
+var_dump($_POST);
 session_start();
 
 //VARIABLES
@@ -12,14 +13,9 @@ $requete->execute(array(
     'email' => $email,
     'mdp' => $mdp,
 ));
-
-if ($requete->rowCount() > 0) {
-    header('Location: test.html');
-    exit();
-} else {
-    echo 'ERREUR DE CONNECTION';
-    echo '<form action="Cinema.html" method="post">
-            <input type="submit" value="Page Connection"/><br>
-          </form>';
+if ($requete->rowCount() > 0){
+    echo 'Vous etes connecter';
 }
-?>
+else{
+    echo 'ERREUR DE CONNECTION';
+}

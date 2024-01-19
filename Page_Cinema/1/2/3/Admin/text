@@ -1,0 +1,22 @@
+<tr>
+            <td>
+                Salle de projection :
+            </td>
+            <td>
+                <?php
+                //VARIABLES
+                $bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+                //CODE
+                $requete = $bdd ->prepare('SELECT nom_salle,id_salle FROM salle_projection');
+                $requete -> execute();
+                $result = $requete->fetchAll();
+                ?>
+                <select name="salle">
+                    <?php
+                    foreach ($result as $el){
+                        echo '<option value ='.$el['id_salle'].'/>'.$el['nom_salle'].'</option>';
+                    }
+                    ?>
+                </select>
+            </td>
+        </tr>
