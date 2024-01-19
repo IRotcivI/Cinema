@@ -53,6 +53,16 @@
     </div>
 </nav>
 
+<nav>
+    <div class="text-center">
+        <img src="img/test.png" class="rounded img-thumbnail">
+        <a type="button" class="btn btn-outline-warning" style="display: block;">Warning</a>
+    </div>
+
+
+
+</nav>
+
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-lqAszqFRoHDpNS++fVp4jjLw6R/xFpKGJg3i8b5GoP8C5C3ISIJLMP6qA3s3iXJ" crossorigin="anonymous"></script>
