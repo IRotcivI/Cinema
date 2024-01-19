@@ -35,7 +35,7 @@
     <tbody>
             <?php
             //VARIABLES
-            $bdd = new PDO('mysql:host=localhost:3307;dbname=vsa_cinema;charset=utf8', 'root', '');
+            $bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
 
             //CODES
             $requete = $bdd -> prepare("SELECT nom,prenom,age,email,mdp,tel,rue,ville,cp FROM utilisateur");

@@ -32,7 +32,7 @@
     <tbody>
     <?php
     //VARIABLES
-    $bdd = new PDO('mysql:host=localhost:3307;dbname=vsa_cinema;charset=utf8', 'root', '');
+    $bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
 
     //CODES
     $requete = $bdd -> prepare("SELECT nom,date,heure,paiement,nbr_place,ref_utilisateur FROM reservation");
