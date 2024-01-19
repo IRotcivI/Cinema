@@ -1,0 +1,2104 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_34_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_34_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_34_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_34_[Changes]/shelved.patch	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,149 +0,0 @@
+-Index: Connexion_Inscription/inscription.html
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Inscription</title>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"form.css\">\r\n</head>\r\n<body>\r\n<div class=\"form\">\r\n    <br>\r\n    <div class=\"title\">Inscription</div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"prenom\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut cut-prenom\"></div>\r\n        <label for=\"prenom\" class=\"placeholder\">Prenom</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"nom\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut cut-nom\"></div>\r\n        <label for=\"nom\" class=\"placeholder\">Nom</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"email\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut cut-short\"></div>\r\n        <label for=\"email\" class=\"placeholder\">Email</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"age\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut cut-age\"></div>\r\n        <label for=\"age\" class=\"placeholder\">Age</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"telephone\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut\"></div>\r\n        <label for=\"telephone\" class=\"placeholder\">Telephone</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"adresse\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut cut-adresse\"></div>\r\n        <label for=\"adresse\" class=\"placeholder\">Adresse</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"ville\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut cut-ville\"></div>\r\n        <label for=\"ville\" class=\"placeholder\">Ville</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"mdp\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut cut-mdp\"></div>\r\n        <label for=\"mdp\" class=\"placeholder\">Mot de passe</label>\r\n    </div>\r\n\r\n    <button type=\"text\" class=\"submit\">Je m'inscris</button>\r\n</div>\r\n</body>\r\n</html>\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/Connexion_Inscription/inscription.html b/Connexion_Inscription/inscription.html
+---- a/Connexion_Inscription/inscription.html	(revision 63b912ec84b383a2ae70029b83bff46985f7547a)
+-+++ b/Connexion_Inscription/inscription.html	(date 1702027768838)
+-@@ -4,61 +4,64 @@
+-     <meta charset="UTF-8">
+-     <title>Inscription</title>
+-     <link rel="stylesheet" type="text/css" href="form.css">
+-+
+- </head>
+- <body>
+-+<form method="post" action="Inscription.php">
+- <div class="form">
+-     <br>
+-     <div class="title">Inscription</div>
+- 
+-     <div class="input-container ic1">
+--        <input id="prenom" class="input" type="text" placeholder=" " />
+-+        <input id="prenom" class="input" type="text" placeholder=" " name="prenom" />
+-         <div class="cut cut-prenom"></div>
+-         <label for="prenom" class="placeholder">Prenom</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="nom" class="input" type="text" placeholder=" " />
+-+        <input id="nom" class="input" type="text" placeholder=" " name="nom" />
+-         <div class="cut cut-nom"></div>
+-         <label for="nom" class="placeholder">Nom</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="email" class="input" type="text" placeholder=" " />
+-+        <input id="email" class="input" type="text" placeholder=" " name="email" />
+-         <div class="cut cut-short"></div>
+-         <label for="email" class="placeholder">Email</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="age" class="input" type="text" placeholder=" " />
+-+        <input id="age" class="input" type="text" placeholder=" " name="age" />
+-         <div class="cut cut-age"></div>
+-         <label for="age" class="placeholder">Age</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="telephone" class="input" type="text" placeholder=" " />
+-+        <input id="telephone" class="input" type="text" placeholder=" " name="telephone" />
+-         <div class="cut"></div>
+-         <label for="telephone" class="placeholder">Telephone</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="adresse" class="input" type="text" placeholder=" " />
+-+        <input id="adresse" class="input" type="text" placeholder=" " name="adresse" />
+-         <div class="cut cut-adresse"></div>
+--        <label for="adresse" class="placeholder">Adresse</label>
+-+        <label for="adresse" class="placeholder" > Adresse</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="ville" class="input" type="text" placeholder=" " />
+-+        <input id="ville" class="input" type="text" placeholder=" " name="ville" />
+-         <div class="cut cut-ville"></div>
+-         <label for="ville" class="placeholder">Ville</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="mdp" class="input" type="text" placeholder=" " />
+-+        <input id="mdp" class="input" type="text" placeholder=" " name="mdp" />
+-         <div class="cut cut-mdp"></div>
+-         <label for="mdp" class="placeholder">Mot de passe</label>
+-     </div>
+- 
+-     <button type="text" class="submit">Je m'inscris</button>
+- </div>
+-+</form>
+- </body>
+- </html>
+-Index: Connexion_Inscription/Inscription.php
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?php\r\n\r\n//VARIABLES\r\n$nom = $_POST['nom'];\r\n$prenom = $_POST['prenom'];\r\n$email = $_POST['email'];\r\n$mdp = $_POST['mdp'];\r\n$age = $_POST['age'];\r\n$tel = $_POST['telephone'];\r\n$rue = $_POST['adresse'];\r\n$ville = $_POST['ville'];\r\n$cp = $_POST['code_postal'];\r\n$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');\r\n\r\n//CODE\r\n$requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville,cp) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville,:cp)');\r\n$requete->execute(array(\r\n    'nom' => $nom,\r\n    'prenom' => $prenom,\r\n    'email' => $email,\r\n    'mdp' => $mdp,\r\n    'age' => $age,\r\n    'tel' => $tel,\r\n    'rue' => $rue,\r\n    'ville' => $ville,\r\n    'cp' => $cp,\r\n));\r\necho \"Votre compte a été crée, veuilez revenir a la page de connexion !\";\r\n\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/Connexion_Inscription/Inscription.php b/Connexion_Inscription/Inscription.php
+---- a/Connexion_Inscription/Inscription.php	(revision 63b912ec84b383a2ae70029b83bff46985f7547a)
+-+++ b/Connexion_Inscription/Inscription.php	(date 1702027618403)
+-@@ -1,5 +1,5 @@
+- <?php
+--
+-+var_dump($_POST);
+- //VARIABLES
+- $nom = $_POST['nom'];
+- $prenom = $_POST['prenom'];
+-@@ -9,21 +9,32 @@
+- $tel = $_POST['telephone'];
+- $rue = $_POST['adresse'];
+- $ville = $_POST['ville'];
+--$cp = $_POST['code_postal'];
+--$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+-+$bdd = new PDO('mysql:host=localhost:3307;dbname=vsa_cinema;charset=utf8', 'root', '');
+- 
+- //CODE
+--$requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville,cp) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville,:cp)');
+--$requete->execute(array(
+--    'nom' => $nom,
+--    'prenom' => $prenom,
+--    'email' => $email,
+--    'mdp' => $mdp,
+--    'age' => $age,
+--    'tel' => $tel,
+--    'rue' => $rue,
+--    'ville' => $ville,
+--    'cp' => $cp,
+--));
+--echo "Votre compte a été crée, veuilez revenir a la page de connexion !";
+-+
+-+$verification = $bdd->prepare('SELECT * FROM utilisateur WHERE email = :email');
+-+$verification->execute(array(
+-+    'email'=>$email,
+-+));
+-+if ($verification->rowCount() > 0){
+-+    echo 'Ce email est déja utilisé par un autre utilisateur';
+-+}else{
+-+    $requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville)');
+-+    $requete->execute(array(
+-+        'nom' => $nom,
+-+        'prenom' => $prenom,
+-+        'email' => $email,
+-+        'mdp' => $mdp,
+-+        'age' => $age,
+-+        'tel' => $tel,
+-+        'rue' => $rue,
+-+        'ville' => $ville,
+-+
+-+    ));
+-+    echo "Votre compte a été crée, veuilez revenir a la page de connexion !";
+-+}
+-+
+-+
+-+
+- 
+Index: Page_Cinema/MENU/Admin/film/film.css
+===================================================================
+diff --git a/Page_Cinema/MENU/Admin/film/film.css b/Page_Cinema/MENU/Admin/film/film.css
+deleted file mode 100644
+--- a/Page_Cinema/MENU/Admin/film/film.css	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,209 +0,0 @@
+-/* Please ❤ this if you like it! */
+-
+-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+-
+-*{
+-    font-family: 'Bebas Neue', sans-serif;
+-}
+-
+-body {
+-    font-weight: 300;
+-    font-size: 15px;
+-    line-height: 1.7;
+-    color: #c4c3ca;
+-    background-color: #1f2029;
+-    overflow-x: hidden;
+-    display: flex;
+-    align-items: center;
+-    justify-content: center;
+-    min-height: 100vh;
+-}
+-
+-a {
+-    cursor: pointer;
+-    transition: all 200ms linear;
+-}
+-
+-a:hover {
+-    text-decoration: none;
+-}
+-
+-p {
+-    font-weight: 500;
+-    font-size: 14px;
+-    line-height: 1.7;
+-}
+-
+-h4 {
+-    font-weight: 600;
+-    text-align: center;
+-    font-size: 35px;
+-}
+-
+-h6 span {
+-    padding: 0 20px;
+-    text-transform: uppercase;
+-    font-weight: 700;
+-}
+-
+-.section {
+-    position: relative;
+-    width: 30%;
+-    display: block;
+-}
+-
+-.full-height {
+-    min-height: 100vh;
+-}
+-
+-.card-3d-wrap {
+-    position: relative;
+-    width: 440px;
+-    max-width: 100%;
+-    height: 400px;
+-    -webkit-transform-style: preserve-3d;
+-    transform-style: preserve-3d;
+-    perspective: 800px;
+-    margin-top: 60px;
+-}
+-
+-.card-3d-wrapper {
+-    width: 100%;
+-    height: 100%;
+-    position: absolute;
+-    top: 0;
+-    left: 0;
+-    -webkit-transform-style: preserve-3d;
+-    transform-style: preserve-3d;
+-    transition: all 600ms ease-out;
+-}
+-
+-.card-front,
+-.card-back {
+-    width: 100%;
+-    height: 100%;
+-    background-color: #2a2b38;
+-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+-    background-position: bottom center;
+-    background-repeat: no-repeat;
+-    background-size: 300%;
+-    position: absolute;
+-    border-radius: 6px;
+-    left: 0;
+-    top: 0;
+-    -webkit-transform-style: preserve-3d;
+-    transform-style: preserve-3d;
+-    -webkit-backface-visibility: hidden;
+-    -moz-backface-visibility: hidden;
+-    -o-backface-visibility: hidden;
+-    backface-visibility: hidden;
+-}
+-
+-.card-back {
+-    transform: rotateY(180deg);
+-}
+-
+-.center-wrap {
+-    position: relative;
+-    width: 100%;
+-    max-width: 600px;
+-    padding: 0 35px;
+-}
+-
+-.form-group {
+-    position: relative;
+-    display: block;
+-    margin: 0;
+-    padding: 0;
+-    color: #f1cb29;
+-
+-}
+-
+-.form-style {
+-    padding: 13px 20px;
+-    padding-left: 55px;
+-    height: 48px;
+-    width: 100%;
+-    font-weight: 500;
+-    border-radius: 4px;
+-    font-size: 14px;
+-    line-height: 22px;
+-    letter-spacing: 0.5px;
+-    outline: none;
+-    color: #c4c3ca;
+-    background-color: #1f2029;
+-    border: none;
+-    -webkit-transition: all 200ms linear;
+-    transition: all 200ms linear;
+-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+-}
+-
+-.form-style:focus,
+-.form-style:active {
+-    border: none;
+-    outline: none;
+-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+-}
+-
+-.input-icon {
+-    position: absolute;
+-    top: 0;
+-    left: 18px;
+-    height: 48px;
+-    font-size: 24px;
+-    line-height: 48px;
+-    text-align: left;
+-    color: #f1cb29;
+-    -webkit-transition: all 200ms linear;
+-    transition: all 200ms linear;
+-}
+-
+-.bi {
+-    position: absolute;
+-    top: 0;
+-    left: 18px;
+-    height: 48px;
+-    font-size: 24px;
+-    line-height: 48px;
+-    text-align: left;
+-    color: #f1cb29;
+-    -webkit-transition: all 200ms linear;
+-    transition: all 200ms linear;
+-}
+-
+-.form-group input[type="text"]:focus,
+-.form-group input[type="text"]:active {
+-    border: none;
+-    outline: none;
+-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+-}
+-
+-.form-group input[type="text"] + .input-icon {
+-    font-size: 20px;
+-    line-height: 48px;
+-    left: 18px;
+-}
+-
+-.form-group input[type="text"] + .input-icon ~ .btn {
+-    margin-top: 8px;
+-}
+-
+-.btn {
+-    border-radius: 4px;
+-    height: 44px;
+-    font-size: 13px;
+-    font-weight: 600;
+-    text-transform: uppercase;
+-    -webkit-transition: all 200ms linear;
+-    transition: all 200ms linear;
+-    padding: 0 52px;
+-    letter-spacing: 1px;
+-    display: -webkit-inline-flex;
+-    display: -ms-inline-flexbox;
+-    display: inline-flex;
+-    -webkit-align-items: center;
+-    align-items: center;
+-    color: #f1cb29;
+-    text-align: center;
+-}
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_26__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_26__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_26__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_26__Changes_.xml	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_08_12_2023_10_26_[Changes]" date="1702027712942" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_26_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 08/12/2023 10:26 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: Page_Cinema/MENU/Admin/menu/style.css
+===================================================================
+diff --git a/Page_Cinema/MENU/Admin/menu/style.css b/Page_Cinema/MENU/Admin/menu/style.css
+deleted file mode 100644
+--- a/Page_Cinema/MENU/Admin/menu/style.css	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,11 +0,0 @@
+-body{
+-    background: #1f2029ff;
+-    background-blend-mode: multiply;
+-    background-position: center;
+-    background-size: cover;
+-    background-repeat: no-repeat;
+-}
+-*{
+-    font-family: 'Bebas Neue', sans-serif;
+-    color: #1f2029ff;
+-}
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_25__Changes_1.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_25__Changes_1.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_25__Changes_1.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_25__Changes_1.xml	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_08_12_2023_08_25_[Changes]1" date="1702020396372" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_25_[Changes]1/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 08/12/2023 08:25 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_26_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_26_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_26_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_26_[Changes]/shelved.patch	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,216 +0,0 @@
+-Index: Connexion_Inscription/inscription.html
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Inscription</title>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"form.css\">\r\n</head>\r\n<body>\r\n<div class=\"form\">\r\n    <br>\r\n    <div class=\"title\">Inscription</div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"prenom\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut\"></div>\r\n        <label for=\"prenom\" class=\"placeholder\">Prenom</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"nom\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut\"></div>\r\n        <label for=\"nom\" class=\"placeholder\">Nom</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"email\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut cut-short\"></div>\r\n        <label for=\"email\" class=\"placeholder\">Email</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"age\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut\"></div>\r\n        <label for=\"age\" class=\"placeholder\">Age</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"telephone\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut\"></div>\r\n        <label for=\"telephone\" class=\"placeholder\">Telephone</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"adresse\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut\"></div>\r\n        <label for=\"adresse\" class=\"placeholder\">Adresse</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"ville\" class=\"input\" type=\"text\" placeholder=\" \" />\r\n        <div class=\"cut\"></div>\r\n        <label for=\"ville\" class=\"placeholder\">Ville</label>\r\n    </div>\r\n    <button type=\"text\" class=\"submit\">Je m'inscris</button>\r\n</div>\r\n</body>\r\n</html>\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/Connexion_Inscription/inscription.html b/Connexion_Inscription/inscription.html
+---- a/Connexion_Inscription/inscription.html	(revision 4e1a98d31b5b6068e5d012bd06191c6b64efa758)
+-+++ b/Connexion_Inscription/inscription.html	(date 1702025111400)
+-@@ -4,54 +4,63 @@
+-     <meta charset="UTF-8">
+-     <title>Inscription</title>
+-     <link rel="stylesheet" type="text/css" href="form.css">
+-+
+- </head>
+- <body>
+-+<form method="post" action="Inscription.php">
+- <div class="form">
+-     <br>
+-     <div class="title">Inscription</div>
+- 
+-     <div class="input-container ic1">
+--        <input id="prenom" class="input" type="text" placeholder=" " />
+-+        <input id="prenom" class="input" type="text" placeholder=" " name="prenom" />
+-         <div class="cut"></div>
+-         <label for="prenom" class="placeholder">Prenom</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="nom" class="input" type="text" placeholder=" " />
+-+        <input id="nom" class="input" type="text" placeholder=" " name="nom" />
+-         <div class="cut"></div>
+-         <label for="nom" class="placeholder">Nom</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="email" class="input" type="text" placeholder=" " />
+-+        <input id="email" class="input" type="text" placeholder=" " name="email" />
+-         <div class="cut cut-short"></div>
+-         <label for="email" class="placeholder">Email</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="age" class="input" type="text" placeholder=" " />
+-+        <input id="mdp" class="input" type="text" placeholder=" " name="mdp" />
+-+        <div class="cut cut-short"></div>
+-+        <label for="mdp" class="placeholder">Mot de passe</label>
+-+    </div>
+-+
+-+    <div class="input-container ic1">
+-+        <input id="age" class="input" type="text" placeholder=" " name="age" />
+-         <div class="cut"></div>
+-         <label for="age" class="placeholder">Age</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="telephone" class="input" type="text" placeholder=" " />
+-+        <input id="telephone" class="input" type="text" placeholder=" " name="telephone" />
+-         <div class="cut"></div>
+-         <label for="telephone" class="placeholder">Telephone</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="adresse" class="input" type="text" placeholder=" " />
+-+        <input id="adresse" class="input" type="text" placeholder=" " name="adresse" />
+-         <div class="cut"></div>
+--        <label for="adresse" class="placeholder">Adresse</label>
+-+        <label for="adresse" class="placeholder" > Adresse</label>
+-     </div>
+- 
+-     <div class="input-container ic1">
+--        <input id="ville" class="input" type="text" placeholder=" " />
+-+        <input id="ville" class="input" type="text" placeholder=" " name="ville" />
+-         <div class="cut"></div>
+-         <label for="ville" class="placeholder">Ville</label>
+-     </div>
+-     <button type="text" class="submit">Je m'inscris</button>
+- </div>
+-+</form>
+- </body>
+- </html>
+-Index: Connexion_Inscription/Inscription.php
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?php\r\n\r\n//VARIABLES\r\n$nom = $_POST['nom'];\r\n$prenom = $_POST['prenom'];\r\n$email = $_POST['email'];\r\n$mdp = $_POST['mdp'];\r\n$age = $_POST['age'];\r\n$tel = $_POST['telephone'];\r\n$rue = $_POST['adresse'];\r\n$ville = $_POST['ville'];\r\n$cp = $_POST['code_postal'];\r\n$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');\r\n\r\n//CODE\r\n$requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville,cp) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville,:cp)');\r\n$requete->execute(array(\r\n    'nom' => $nom,\r\n    'prenom' => $prenom,\r\n    'email' => $email,\r\n    'mdp' => $mdp,\r\n    'age' => $age,\r\n    'tel' => $tel,\r\n    'rue' => $rue,\r\n    'ville' => $ville,\r\n    'cp' => $cp,\r\n));\r\necho \"Votre compte a été crée, veuilez revenir a la page de connexion !\";\r\n\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/Connexion_Inscription/Inscription.php b/Connexion_Inscription/Inscription.php
+---- a/Connexion_Inscription/Inscription.php	(revision 4e1a98d31b5b6068e5d012bd06191c6b64efa758)
+-+++ b/Connexion_Inscription/Inscription.php	(date 1702024357886)
+-@@ -1,5 +1,5 @@
+- <?php
+--
+-+var_dump($_POST);
+- //VARIABLES
+- $nom = $_POST['nom'];
+- $prenom = $_POST['prenom'];
+-@@ -9,21 +9,32 @@
+- $tel = $_POST['telephone'];
+- $rue = $_POST['adresse'];
+- $ville = $_POST['ville'];
+--$cp = $_POST['code_postal'];
+--$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+-+$bdd = new PDO('mysql:host=localhost:3307;dbname=vsa_cinema;charset=utf8', 'root', '');
+- 
+- //CODE
+--$requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville,cp) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville,:cp)');
+--$requete->execute(array(
+--    'nom' => $nom,
+--    'prenom' => $prenom,
+--    'email' => $email,
+--    'mdp' => $mdp,
+--    'age' => $age,
+--    'tel' => $tel,
+--    'rue' => $rue,
+--    'ville' => $ville,
+--    'cp' => $cp,
+--));
+--echo "Votre compte a été crée, veuilez revenir a la page de connexion !";
+-+
+-+$verification = $bdd->prepare('SELECT * FROM utilisateur WHERE email = :email');
+-+$verification->execute(array(
+-+    'email'=>$email,
+-+));
+-+if ($verification->rowCount() > 0){
+-+    echo 'Ce email est déja utilisé par un autre utilisateur';
+-+}else{
+-+    $requete = $bdd->prepare('INSERT INTO utilisateur (nom,prenom,age,email,mdp,tel,rue,ville) VALUES (:nom,:prenom,:age,:email,:mdp,:tel,:rue,:ville)');
+-+    $requete->execute(array(
+-+        'nom' => $nom,
+-+        'prenom' => $prenom,
+-+        'email' => $email,
+-+        'mdp' => $mdp,
+-+        'age' => $age,
+-+        'tel' => $tel,
+-+        'rue' => $rue,
+-+        'ville' => $ville,
+-+
+-+    ));
+-+    echo "Votre compte a été crée, veuilez revenir a la page de connexion !";
+-+}
+-+
+-+
+-+
+- 
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0ad0d41e-b68b-455a-8bb9-411039c4ee9c\" name=\"Changes\" comment=\"Nouveau : Code php connection au site web\">\r\n      <change beforePath=\"$PROJECT_DIR$/Connexion_Inscription/connexion.html\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;IRotcivI&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"d76929fc-e7d3-4648-8cac-4b1d586658ca\" />\r\n        <option name=\"url\" value=\"https://github.com/IRotcivI/Cinema.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"PhpDebugGeneral\" listening_started=\"true\" />\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"C:\\wamp64\\bin\\php\\php8.1.0\\php.exe\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2Yw9VfOUKroAdTzcjC14b4HtuP7\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/fayed/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;mysql&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\fayed\\Desktop\\Projet\\Cinema\\Victor\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0ad0d41e-b68b-455a-8bb9-411039c4ee9c\" name=\"Changes\" comment=\"\" />\r\n      <created>1701425799886</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1701425799886</updated>\r\n      <workItem from=\"1701425800926\" duration=\"1865000\" />\r\n      <workItem from=\"1701434036657\" duration=\"1239000\" />\r\n      <workItem from=\"1701450338019\" duration=\"2550000\" />\r\n      <workItem from=\"1701452902386\" duration=\"2786000\" />\r\n      <workItem from=\"1701525153157\" duration=\"7137000\" />\r\n      <workItem from=\"1701857558685\" duration=\"465000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701457568573</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701457568573</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Nouveau : Code php connection au site web\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701532273448</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701532273448</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné\" />\r\n    <MESSAGE value=\"Nouveau : Code php connection au site web\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Nouveau : Code php connection au site web\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 4e1a98d31b5b6068e5d012bd06191c6b64efa758)
+-+++ b/.idea/workspace.xml	(date 1702023657208)
+-@@ -5,7 +5,9 @@
+-   </component>
+-   <component name="ChangeListManager">
+-     <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Nouveau : Code php connection au site web">
+--      <change beforePath="$PROJECT_DIR$/Connexion_Inscription/connexion.html" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/Connexion_Inscription/Inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/Connexion_Inscription/Inscription.php" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/Connexion_Inscription/inscription.html" beforeDir="false" afterPath="$PROJECT_DIR$/Connexion_Inscription/inscription.html" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-@@ -53,28 +55,28 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent">{
+--  &quot;keyToString&quot;: {
+--    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+--    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+--    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+--    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+--    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+--    &quot;last_opened_file_path&quot;: &quot;C:/Users/fayed/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur&quot;,
+--    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+--    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+--    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+--    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+--    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+--    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+--    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-+  <component name="PropertiesComponent"><![CDATA[{
+-+  "keyToString": {
+-+    "DefaultHtmlFileTemplate": "HTML File",
+-+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-+    "RunOnceActivity.ShowReadmeOnStart": "true",
+-+    "WebServerToolWindowFactoryState": "false",
+-+    "git-widget-placeholder": "main",
+-+    "last_opened_file_path": "C:/Users/FAYE_Vi/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur",
+-+    "list.type.of.created.stylesheet": "CSS",
+-+    "node.js.detected.package.eslint": "true",
+-+    "node.js.detected.package.tslint": "true",
+-+    "node.js.selected.package.eslint": "(autodetect)",
+-+    "node.js.selected.package.tslint": "(autodetect)",
+-+    "settings.editor.selected.configurable": "preferences.pluginManager",
+-+    "vue.rearranger.settings.migration": "true"
+-   },
+--  &quot;keyToStringList&quot;: {
+--    &quot;DatabaseDriversLRU&quot;: [
+--      &quot;mysql&quot;
+-+  "keyToStringList": {
+-+    "DatabaseDriversLRU": [
+-+      "mysql"
+-     ]
+-   }
+--}</component>
+-+}]]></component>
+-   <component name="RecentsManager">
+-     <key name="MoveFile.RECENT_KEYS">
+-       <recent name="C:\Users\fayed\Desktop\Projet\Cinema\Victor" />
+Index: Page_Cinema/MENU/reduction/reduction.html
+===================================================================
+diff --git a/Page_Cinema/MENU/reduction/reduction.html b/Page_Cinema/MENU/reduction/reduction.html
+deleted file mode 100644
+--- a/Page_Cinema/MENU/reduction/reduction.html	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,30 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Title</title>
+-</head>
+-<body>
+-<form method="post" action="reduction.php">
+-    <div class="form">
+-        <label for="code" class="placeholder">code de reduction : </label>
+-        <input id="code" class="input" type="text" placeholder=" " name="code" />
+-
+-        <br><br>
+-
+-        <label for="date_exp" class="placeholder">la date d'expiration : </label>
+-        <input id="date_exp" class="input" type="date" placeholder=" " name="date_exp" />
+-
+-        <br><br>
+-
+-        <label for="pourcentage" class="placeholder">pourcentage de reduction : </label>
+-        <input id="pourcentage" class="input" type="int" placeholder=" " name="pourcentage" />
+-
+-        <br><br>
+-
+-        <input type = "submit" value = "Crée une reduction"/>
+-
+-    </div>
+-</form>
+-</body>
+-</html>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_13_11_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_13_11_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_13_11_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_13_11_[Changes]/shelved.patch	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,23 +0,0 @@
+-Index: Connexion_Inscription/inscription.html
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Inscription</title>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"form.css\">\r\n\r\n</head>\r\n<body>\r\n<form method=\"post\" action=\"Inscription.php\">\r\n<div class=\"form\">\r\n    <br>\r\n    <div class=\"title\">Inscription</div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"prenom\" class=\"input\" type=\"text\" placeholder=\" \" name=\"prenom\" />\r\n        <div class=\"cut cut-prenom\"></div>\r\n        <label for=\"prenom\" class=\"placeholder\">Prenom</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"nom\" class=\"input\" type=\"text\" placeholder=\" \" name=\"nom\" />\r\n        <div class=\"cut cut-nom\"></div>\r\n        <label for=\"nom\" class=\"placeholder\">Nom</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"email\" class=\"input\" type=\"text\" placeholder=\" \" name=\"email\" />\r\n        <div class=\"cut cut-short\"></div>\r\n        <label for=\"email\" class=\"placeholder\">Email</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"age\" class=\"input\" type=\"text\" placeholder=\" \" name=\"age\" />\r\n        <div class=\"cut cut-age\"></div>\r\n        <label for=\"age\" class=\"placeholder\">Age</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"telephone\" class=\"input\" type=\"text\" placeholder=\" \" name=\"telephone\" />\r\n        <div class=\"cut\"></div>\r\n        <label for=\"telephone\" class=\"placeholder\">Telephone</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"adresse\" class=\"input\" type=\"text\" placeholder=\" \" name=\"adresse\" />\r\n        <div class=\"cut cut-adresse\"></div>\r\n        <label for=\"adresse\" class=\"placeholder\" > Adresse</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n        <input id=\"ville\" class=\"input\" type=\"text\" placeholder=\" \" name=\"ville\" />\r\n        <div class=\"cut cut-ville\"></div>\r\n        <label for=\"ville\" class=\"placeholder\">Ville</label>\r\n    </div>\r\n\r\n    <div class=\"input-container ic1\">\r\n\r\n        <input id=\"mdp\" class=\"input\" type=\"text\" placeholder=\" \" name=\"mdp\" />\r\n        <div class=\"cut cut-mdp\"></div>\r\n        <label for=\"mdp\" class=\"placeholder\">Mot de passe</label>\r\n    </div>\r\n\r\n<<<<<<< HEAD\r\n    <button type=\"text\" class=\"submit\" onclick=\"window.location.href='inscription_html.html';\">Je m'inscris</button>\r\n\r\n=======\r\n    <button type=\"submit\" class=\"submit\">Je m'inscris</button>\r\n>>>>>>> 5090aa80e01abc73c28d2b19a024d428e220409b\r\n</div>\r\n</form>\r\n</body>\r\n</html>\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/Connexion_Inscription/inscription.html b/Connexion_Inscription/inscription.html
+---- a/Connexion_Inscription/inscription.html	(revision be48024eee47343879371ad3747262f71f6a9901)
+-+++ b/Connexion_Inscription/inscription.html	(date 1702032001793)
+-@@ -61,12 +61,8 @@
+-         <label for="mdp" class="placeholder">Mot de passe</label>
+-     </div>
+- 
+--<<<<<<< HEAD
+-     <button type="text" class="submit" onclick="window.location.href='inscription_html.html';">Je m'inscris</button>
+- 
+--=======
+--    <button type="submit" class="submit">Je m'inscris</button>
+-->>>>>>> 5090aa80e01abc73c28d2b19a024d428e220409b
+- </div>
+- </form>
+- </body>
+Index: Page_Cinema/MENU/menu_html.html
+===================================================================
+diff --git a/Page_Cinema/MENU/menu_html.html b/Page_Cinema/MENU/menu_html.html
+deleted file mode 100644
+--- a/Page_Cinema/MENU/menu_html.html	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,98 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Menu</title>
+-    <link rel="stylesheet" type="text/css" href="../Selim/test/menu/menu_css.css">
+-</head>
+-<body>
+-<!-- Navbar -->
+-<nav id="navbar">
+-    <ul class="navbar-items flexbox-col">
+-        <li class="navbar-logo flexbox-left">
+-            <a class="navbar-item-inner flexbox">
+-                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 1438.88 1819.54">
+-                    <polygon points="925.79 318.48 830.56 0 183.51 1384.12 510.41 1178.46 925.79 318.48"/>
+-                    <polygon points="1438.88 1663.28 1126.35 948.08 111.98 1586.26 0 1819.54 1020.91 1250.57 1123.78 1471.02 783.64 1663.28 1438.88 1663.28"/>
+-                </svg>
+-            </a>
+-        </li>
+-        <li class="navbar-item flexbox-left">
+-            <a class="navbar-item-inner flexbox-left">
+-                <div class="navbar-item-inner-icon-wrapper flexbox">
+-                    <ion-icon name="search-outline"></ion-icon>
+-                </div>
+-                <span class="link-text">Recherche</span>
+-            </a>
+-        </li>
+-        <li class="navbar-item flexbox-left">
+-            <a class="navbar-item-inner flexbox-left">
+-                <div class="navbar-item-inner-icon-wrapper flexbox">
+-                    <ion-icon name="home-outline"></ion-icon>
+-                </div>
+-                <span class="link-text">Menu</span>
+-            </a>
+-        </li>
+-        <li class="navbar-item flexbox-left">
+-            <a class="navbar-item-inner flexbox-left">
+-                <div class="navbar-item-inner-icon-wrapper flexbox">
+-                    <ion-icon name="folder-open-outline"></ion-icon>
+-                </div>
+-                <span class="link-text">Projects</span>
+-            </a>
+-        </li>
+-        <li class="navbar-item flexbox-left">
+-            <a class="navbar-item-inner flexbox-left">
+-                <div class="navbar-item-inner-icon-wrapper flexbox">
+-                    <ion-icon name="pie-chart-outline"></ion-icon>
+-                </div>
+-                <span class="link-text">Dashboard</span>
+-            </a>
+-        </li>
+-        <li class="navbar-item flexbox-left">
+-            <a class="navbar-item-inner flexbox-left">
+-                <div class="navbar-item-inner-icon-wrapper flexbox">
+-                    <ion-icon name="people-outline"></ion-icon>
+-                </div>
+-                <span class="link-text">Team</span>
+-            </a>
+-        </li>
+-        <li class="navbar-item flexbox-left">
+-            <a class="navbar-item-inner flexbox-left">
+-                <div class="navbar-item-inner-icon-wrapper flexbox">
+-                    <ion-icon name="chatbubbles-outline"></ion-icon>
+-                </div>
+-                <span class="link-text">Support</span>
+-            </a>
+-        </li>
+-        <li class="navbar-item flexbox-left">
+-            <a class="navbar-item-inner flexbox-left">
+-                <div class="navbar-item-inner-icon-wrapper flexbox">
+-                    <ion-icon name="settings-outline"></ion-icon>
+-                </div>
+-                <span class="link-text">Mon compte</span>
+-            </a>
+-        </li>
+-    </ul>
+-</nav>
+-
+-<!-- Main -->
+-<main id="main" class="flexbox-col">
+-    <div id="card_container" data-offset="2">
+-        <div class="pg">
+-            <img src="https://pluspng.com/img-png/aquaman-png-aquaman-png-clipart-666.png">
+-        </div>
+-        <div id="card">
+-            <div class="shine"></div>
+-            <div class="text-block">
+-                <h1>Aquaman <small>(2018)</small></h1>
+-                <h3>Action | Adventure</h3>
+-                <p>
+-                    Arthur Curry learns that he is the heir to the underwater kingdom of Atlantis, and must step forward to lead his people and be a hero to the world.
+-                </p>
+-                <button>Watch Trailer</button>
+-            </div>
+-        </div>
+-    </div></main>
+-</body>
+-</html>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_34__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_34__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_34__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_34__Changes_.xml	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_08_12_2023_10_34_[Changes]" date="1702028110551" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_10_34_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 08/12/2023 10:34 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: Page_Cinema/MENU/menu_css.css
+===================================================================
+diff --git a/Page_Cinema/MENU/menu_css.css b/Page_Cinema/MENU/menu_css.css
+deleted file mode 100644
+--- a/Page_Cinema/MENU/menu_css.css	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,563 +0,0 @@
+-/* -
+--*-~*~-*-*-~*~-*-*-~*~* |
+-●▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬●
+-Made by ~
+-Areal Alien ❥ 雷克斯
+-●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
+-──────▄▀▄─────▄▀▄
+-─────▄█░░▀▀▀▀▀░░█▄
+-─▄▄──█░░░░░░░░░░░█──▄▄
+-█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█
+--*-~*~-*-*-~*~-*-*-~*~* |
+-- */
+-:root {
+-    --primary: 237, 94%, 81%;
+-    --background: 266, 16%, 92%;
+-    --background-secondary: 256, 12%, 12%;
+-    --background-secondary-dark: 256, 10%, 10%;
+-    --background-secondary-light: 257, 11%, 16%;
+-    --text-primary: 0, 0%, 0%;
+-    /* Colors */
+-    --black: 0, 0%, 0%;
+-    --white: 0, 0%, 100%;
+-    --quite-gray: 0, 0%, 50%;
+-    --grooble: 10, 28%, 93%;
+-    /* Sizes */
+-    --heading-large: 5.6rem;
+-    --heading-medium: 3.6rem;
+-    --heading-small: 2.4rem;
+-    --paragraph: 1.11rem;
+-    --navbar-buttons: 2.4rem;
+-    /* misc */
+-    --transition-main: .175, .685, .32;
+-    /* Fonts */
+-    --font-main: "Poppins";
+-}
+-
+-/* ===========
+-    Variabels
+-   =========== */
+-
+-/* ===============
+-    Global Styles
+-   =============== */
+-
+-*, *::before, *::after {
+-    box-sizing: inherit;
+-}
+-html, body {
+-    margin: 0;
+-    width: 100%;
+-    color: hsl(var(--text-primary));
+-    font-family: var(--font-main);
+-    background-color: hsl(var(--background));
+-    -webkit-font-smoothing: antialiased;
+-    scroll-behavior: smooth;
+-    box-sizing: border-box;
+-}
+-
+-/* ============
+-    Typography
+-   ============ */
+-
+-/* Headings */
+-h1, h2, h3, h4, h5, h6 {
+-    margin: 0;
+-}
+-/* Font Size */
+-h1 {
+-    font-size: var(--heading-large);
+-}
+-h2 {
+-    font-size: var(--heading-medium);
+-}
+-h3 {
+-    font-size: var(--heading-small);
+-}
+-h4 {
+-    font-size: calc(var(--heading-small) - .2rem);
+-}
+-h5 {
+-    font-size: calc(var(--heading-small) - .4rem);
+-}
+-h6 {
+-    font-size: calc(var(--heading-small) - .6rem);
+-}
+-/* Font Weight */
+-h1, h2 {
+-    font-weight: 900;
+-}
+-h3, h4, h5, h6 {
+-    font-weight: 800;
+-}
+-/* Paragraphs */
+-p {
+-    margin: 0;
+-    font-size: var(--paragraph);
+-}
+-/* Links */
+-a {
+-    color: hsla(var(--primary), 1);
+-    font-size: var(--paragraph);
+-    text-decoration: underline;
+-}
+-a:visited {
+-    color: hsla(var(--primary), .5);
+-}
+-
+-/* =========
+-    Buttons
+-   ========= */
+-
+-button {
+-    padding: .8em 1.2em;
+-    border: 1px solid hsl(var(--black));
+-    background-color: hsl(var(--background));
+-    font-size: var(--paragraph);
+-    cursor: pointer;
+-    outline: none;
+-}
+-button:focus {
+-    box-shadow:
+-            0 0 0 2px hsl(var(--black)),
+-            0 0 0 3px hsl(var(--white));
+-    border: 1px solid transparent;
+-}
+-
+-/* =======
+-    Lists
+-   ======= */
+-
+-ul, ol {
+-    margin: 1em 0;
+-}
+-
+-/* =======
+-    Forms
+-   ======= */
+-
+-form {
+-    margin: 0;
+-}
+-fieldset {
+-    margin: 0;
+-    padding: .5em 0;
+-    border: none;
+-}
+-input {
+-    padding: .8em 1.2em;
+-    font-size: var(--paragraph);
+-    background-color: hsl(var(--grooble));
+-    border: 2px solid hsl(var(--grooble));
+-    outline: none;
+-}
+-textarea {
+-    padding: .8em 1.2em;
+-    font-size: var(--paragraph);
+-    font-family: var(--font-main);
+-    background-color: hsl(var(--grooble));
+-    border: 2px solid hsl(var(--grooble));
+-    outline: none;
+-}
+-input, textarea {
+-    transition: all .2s ease-in-out;
+-}
+-input:hover, input:focus, textarea:hover, textarea:focus {
+-    box-shadow:
+-            0 0 0 2px hsl(var(--black)),
+-            0 0 0 3px hsl(var(--white));
+-    border: 2px solid transparent;
+-}
+-select {
+-    padding: .8em 1.2em;
+-    border: 1px solid hsl(var(--black));
+-    font-size: var(--paragraph);
+-    outline: none;
+-}
+-
+-/* =========
+-    Classes
+-   ========= */
+-
+-/* ================
+-    Global classes
+-   ================ */
+-
+-/* =========
+-    Flexbox
+-   ========= */
+-
+-.flexbox {
+-    display: flex;
+-    justify-content: center;
+-    align-items: center;
+-}
+-.flexbox-left {
+-    display: flex;
+-    justify-content: flex-start;
+-    align-items: center;
+-}
+-.flexbox-right {
+-    display: flex;
+-    justify-content: flex-end;
+-    align-items: center;
+-}
+-/* Columns */
+-.flexbox-col {
+-    display: flex;
+-    justify-content: center;
+-    flex-direction: column;
+-    align-items: center;
+-}
+-.flexbox-col-left {
+-    display: flex;
+-    justify-content: flex-start;
+-    flex-direction: column;
+-    align-items: flex-start;
+-}
+-.flexbox-col-left-ns {
+-    display: flex;
+-    justify-content: center;
+-    flex-direction: column;
+-    align-items: flex-start;
+-}
+-.flexbox-col-right {
+-    display: flex;
+-    justify-content: flex-end;
+-    flex-direction: column;
+-    align-items: flex-end;
+-}
+-.flexbox-col-start-center {
+-    display: flex;
+-    justify-content: flex-start;
+-    flex-direction: column;
+-    align-items: center;
+-}
+-/* Spacings */
+-.flexbox-space-bet {
+-    display: flex;
+-    justify-content: space-between;
+-    align-items: center;
+-}
+-
+-/* =========
+-    Classes
+-   ========= */
+-
+-.view-width {
+-    width: 70%;
+-}
+-
+-/* ========
+-    Navbar
+-   ======== */
+-
+-#navbar {
+-    top: 0;
+-    padding: 0;
+-    width: 5em;
+-    height: 100vh;
+-    position: fixed;
+-    background-color: hsl(var(--background-secondary));
+-    transition: width .35s cubic-bezier(var(--transition-main), 1);
+-    overflow-y: auto;
+-    overflow-x: hidden;
+-}
+-#navbar:hover {
+-    width: 16em;
+-}
+-#navbar::-webkit-scrollbar-track {
+-    background-color: hsl(var(--background-secondary));
+-}
+-#navbar::-webkit-scrollbar {
+-    width: 8px;
+-    background-color: hsl(var(--background-secondary));
+-}
+-#navbar::-webkit-scrollbar-thumb {
+-    background-color: hsl(var(--primary));
+-}
+-.navbar-items {
+-    margin: 0;
+-    padding: 0;
+-    list-style-type: none;
+-}
+-/* Navbar Logo */
+-.navbar-logo {
+-    margin: 0 0 2em 0;
+-    width: 100%;
+-    height: 5em;
+-    background: hsl(var(--background-secondary-dark));
+-}
+-.navbar-logo > .navbar-item-inner {
+-    width: calc(5rem - 8px);
+-}
+-.navbar-logo > .navbar-item-inner:hover {
+-    background-color: transparent;
+-}
+-.navbar-logo > .navbar-item-inner > svg {
+-    height: 2em;
+-    fill: hsl(var(--white));
+-}
+-/* Navbar Items */
+-.navbar-item {
+-    padding: 0 .5em;
+-    width: 100%;
+-    cursor: pointer;
+-}
+-.navbar-item-inner {
+-    padding: 1em 0;
+-    width: 100%;
+-    position: relative;
+-    color: hsl(var(--quite-gray));
+-    border-radius: .25em;
+-    text-decoration: none;
+-    transition: all .2s cubic-bezier(var(--transition-main), 1);
+-}
+-.navbar-item-inner:hover {
+-    color: hsl(var(--white));
+-    background: hsl(var(--background-secondary-light));
+-    box-shadow: 0 17px 30px -10px hsla(var(--black), .25);
+-}
+-.navbar-item-inner-icon-wrapper {
+-    width: calc(5rem - 1em - 8px);
+-    position: relative;
+-}
+-.navbar-item-inner-icon-wrapper ion-icon {
+-    position: absolute;
+-    font-size: calc(var(--navbar-buttons) - 1rem);
+-}
+-.link-text {
+-    margin: 0;
+-    width: 0;
+-    text-overflow: ellipsis;
+-    white-space: nowrap;
+-    transition: all .35s cubic-bezier(var(--transition-main), 1);
+-    overflow: hidden;
+-    opacity: 0;
+-}
+-#navbar:hover .link-text {
+-    width: calc(100% - calc(5rem - 8px));
+-    opacity: 1;
+-}
+-
+-/* ======
+-    Main
+-   ====== */
+-
+-#main {
+-    margin: 0 0 0 5em;
+-    min-height: 150vh;
+-}
+-#main > h2 {
+-    width: 80%;
+-    max-width: 80%;
+-}
+-#main > p {
+-    width: 80%;
+-    max-width: 80%;
+-}
+-
+-/* =============
+-    ::Selectors
+-   ============= */
+-
+-/* Selection */
+-::selection {
+-    color: hsl(var(--white));
+-    background: hsla(var(--primary), .33);
+-}
+-/* Scrollbar */
+-::-webkit-scrollbar-track {
+-    background-color: hsl(var(--background));
+-}
+-::-webkit-scrollbar {
+-    width: 8px;
+-    background-color: hsl(var(--background));
+-}
+-::-webkit-scrollbar-thumb {
+-    background-color: hsl(var(--primary));
+-}
+-
+-/* ===============
+-    5. @keyframes
+-   =============== */
+-
+-/* ==============
+-    @media rules
+-   ============== */
+-
+-@media only screen and (max-width: 1660px) {
+-    :root {
+-        /* Sizes */
+-        --heading-large: 5.4rem;
+-        --heading-medium: 3.4rem;
+-        --heading-small: 2.2rem;
+-    }
+-}
+-@media only screen and (max-width: 1456px) {
+-    :root {
+-        /* Sizes */
+-        --heading-large: 5.2rem;
+-        --heading-medium: 3.2rem;
+-        --heading-small: 2rem;
+-    }
+-    .view-width {
+-        width: 80%;
+-    }
+-}
+-@media only screen and (max-width: 1220px) {
+-    .view-width {
+-        width: 70%;
+-    }
+-}
+-@media only screen and (max-width: 1024px) {
+-    :root {
+-        /* Sizes */
+-        --heading-large: 5rem;
+-        --heading-medium: 3rem;
+-        --heading-small: 1.8rem;
+-    }
+-    .view-width {
+-        width: 75%;
+-    }
+-}
+-@media only screen and (max-width: 756px) {
+-    :root {
+-        /* Sizes */
+-        --heading-large: 4rem;
+-        --heading-medium: 2.6rem;
+-        --heading-small: 1.6rem;
+-        --paragraph: 1rem;
+-        --navbar-buttons: 2.2rem;
+-    }
+-    .view-width {
+-        width: calc(100% - 5em);
+-    }
+-}
+-@media only screen and (max-width: 576px) {
+-    .view-width {
+-        width: calc(100% - 3em);
+-    }
+-}
+-@media only screen and (max-width: 496px) {
+-
+-}
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+-@import url(https://fonts.googleapis.com/css?family=Rubik:400,900);
+-
+-* {
+-    box-sizing:border-box;
+-}
+-body, html {
+-    height:100%;
+-    min-height:100%;
+-}
+-body {
+-    background:linear-gradient(#f6f7fc 0%, #d5e1e8 40%);
+-    transform-style:preserve-3d;
+-    transform:perspective(800px);
+-    font-family:'Lato', Sans-serif;
+-}
+-#card_container {
+-    width:700px;
+-    height:350px;
+-    position:absolute;
+-    top:50%;
+-    left:50%;
+-    margin:-175px 0 0 -350px;
+-}
+-#card {
+-    animation:backAn 50s infinite;
+-    color:#fff;
+-    padding:30px;
+-    width:100%;
+-    height:100%;
+-    position:absolute;
+-    z-index:1;
+-    background:url(https://riverbeats.life/neworleans/wp-content/uploads/2018/07/Atlantis.png) 100% bottom;
+-    /*background:url(http://riccardotartaglia.it/img/deadpool/back.jpg) 100% bottom;*/
+-    /*box-shadow:0px 45px 100px rgba(0, 0, 0, 0.4), inset 0 0 0 1000px rgba(156, 27, 27, 0.6);*/
+-    box-shadow:0px 45px 100px rgba(0, 0, 0, 0.4), inset 0 0 0 1000px rgba(0, 76, 86, 0.6);
+-}
+-#card .text-block {
+-    position:relative;
+-    z-index:2;
+-}
+-#card .text-block h1 {
+-    font-family:'Rubik', Sans-serif;
+-    font-size:3em;
+-    margin:0;
+-    text-transform:uppercase;
+-    font-weight:700;
+-}
+-#card .text-block h1 small {
+-    font-size:.4em;
+-    color:#ccc;
+-    position:relative;
+-    bottom:10px;
+-}
+-#card .text-block h3 {
+-    margin:0;
+-    font-weight:700;
+-}
+-#card .text-block p {
+-    font-weight:300;
+-    width:60%;
+-}
+-#card .text-block button {
+-    transition:all 0.35s cubic-bezier(0.37, 0.26, 0.35, 1);
+-    border:4px solid #fff;
+-    padding:10px;
+-    background:transparent;
+-    font-family:'Rubik', Sans-serif;
+-    text-transform:uppercase;
+-    font-weight:700;
+-    cursor:pointer;
+-}
+-#card .text-block button:hover {
+-    background:#004c56;
+-}
+-#card_container .pg {
+-    position:absolute;
+-    height:450px;
+-    width:40%;
+-    right:-10px;
+-    bottom:0px;
+-    z-index:2;
+-}
+-#card_container .pg > img{
+-    height:450px;
+-}
+-.shine {
+-    position:absolute;
+-    top:0;
+-    left:0;
+-    right:0;
+-    bottom:0;
+-    background:linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%);
+-    z-index:1;
+-}
+-button {
+-    color:#fff;
+-}
+-@keyframes backAn {
+-    0% {
+-        background-size:100%;
+-    }
+-    50% {
+-        background-size:250%;
+-    }
+-    100% {
+-        background-size:100%;
+-    }
+-}
+\ No newline at end of file
+Index: Page_Cinema/MENU/Admin/film/film.php
+===================================================================
+diff --git a/Page_Cinema/MENU/Admin/film/film.php b/Page_Cinema/MENU/Admin/film/film.php
+deleted file mode 100644
+--- a/Page_Cinema/MENU/Admin/film/film.php	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,19 +0,0 @@
+-<?php
+-var_dump($_POST);
+-//VARIABLES
+-$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+-$nom = $_POST['nom'];
+-$desc = $_POST['desc'];
+-$affiche = $_POST['aff'];
+-$rea = $_POST['rea'];
+-
+-
+-//CODE
+-$requete = $bdd -> prepare('INSERT INTO film (nom,description,affiche,realisateur) VALUES (:nom, :description, :affiche, :realisateur)');
+-$requete -> execute(array(
+-    'nom' => $nom,
+-    'description' => $desc,
+-    'affiche' => $affiche,
+-    'realisateur' => $rea,
+-));
+-header("Location: correct.html");
+\ No newline at end of file
+Index: Page_Cinema/MENU/Admin/film/film.html
+===================================================================
+diff --git a/Page_Cinema/MENU/Admin/film/film.html b/Page_Cinema/MENU/Admin/film/film.html
+deleted file mode 100644
+--- a/Page_Cinema/MENU/Admin/film/film.html	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,45 +0,0 @@
+-<!doctype html>
+-<html lang="fr">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport"
+-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+-    <title>Film</title>
+-
+-    <!--POLICE-->
+-    <link rel="preconnect" href="https://fonts.googleapis.com">
+-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+-
+-    <!--CSS-->
+-    <!--CSS/JS-->
+-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+-    <link rel="stylesheet" href="film.css">
+-
+-</head>
+-<body>
+-<form method="post" action="film.php" class="section text-center">
+-    <h4 class="mb-4 pb-3">Film</h4>
+-    <div class="form-group">
+-        <input type="text" name="nom" class="form-style" placeholder="Nom du film" autocomplete="off" required>
+-        <i class="bi bi-film"></i>
+-    </div>
+-    <div class="form-group mt-2">
+-        <input type="text" name="rea" class="form-style " placeholder="Réalisateur" autocomplete="off" required>
+-        <i class="bi bi-person"></i>
+-    </div>
+-
+-    <div class="form-group mt-2">
+-        <input type="text" name="desc" class="form-style" placeholder="Description" autocomplete="off" required>
+-        <i class="bi bi-body-text"></i>
+-    </div>
+-    <div class="form-group mt-2">
+-        <input type="text" name="aff" class="form-style" placeholder="Affiche" autocomplete="off" required>
+-        <i class="bi bi-image"></i>
+-    </div>
+-    <input href="film.php" type="submit" class="btn mt-4 section text-center">
+-</form>
+-</body>
+-</html>
+\ No newline at end of file
+Index: Page_Cinema/MENU/Admin/film/correct.css
+===================================================================
+diff --git a/Page_Cinema/MENU/Admin/film/correct.css b/Page_Cinema/MENU/Admin/film/correct.css
+deleted file mode 100644
+--- a/Page_Cinema/MENU/Admin/film/correct.css	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,81 +0,0 @@
+-body {
+-    font-family: 'Bebas Neue', sans-serif;
+-    background-color: #1f2029ff;
+-    margin: 0;
+-    display: flex;
+-    align-items: center;
+-    justify-content: center;
+-    height: 100vh;
+-
+-}
+-
+-#main {
+-    text-align: center;
+-    background-color: rgba(69, 73, 115, 0.82);
+-}
+-
+-#card_container {
+-    perspective: 1000px;
+-}
+-
+-#card {
+-    width: 300px;
+-    height: 400px;
+-    background-color: #1f2029ff;
+-    border-radius: 0px;
+-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+-}
+-
+-.shine {
+-    position: absolute;
+-    width: 100%;
+-    height: 100%;
+-    opacity: 0.6;
+-}
+-
+-.text-block {
+-    position: absolute;
+-    width: 100%;
+-    height: 100%;
+-    display: flex;
+-    flex-direction: column;
+-    align-items: center;
+-    justify-content: center;
+-    text-align: center;
+-    padding: 20px;
+-    box-sizing: border-box;
+-}
+-
+-h1 {
+-    color: #c4c3c9ff;
+-    font-size: 28px;
+-    margin-bottom: 10px;
+-    font-family: 'Bebas Neue', sans-serif;
+-}
+-
+-h3 {
+-    color: #555;
+-    font-size: 18px;
+-    margin-bottom: 20px;
+-}
+-
+-form {
+-    margin-top: 20px;
+-
+-}
+-
+-input[type="submit"] {
+-    background-color: #f1cb29;
+-    color: #ffffff;
+-    padding: 10px 20px;
+-    font-size: 16px;
+-    border: none;
+-    border-radius: 5px;
+-    cursor: pointer;
+-    transition: background-color 0.3s;
+-    font-family: 'Bebas Neue', sans-serif;
+-}
+-
+-input[type="submit"]:hover {
+-    background-color: #102670ff;
+-}
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_14_55_[Changes]1/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_14_55_[Changes]1/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_14_55_[Changes]1/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_14_55_[Changes]1/shelved.patch	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,37 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0ad0d41e-b68b-455a-8bb9-411039c4ee9c\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Selim/connexion.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Selim/connexion.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Victor/Inscription.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Victor/Inscription.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"PhpDebugGeneral\" listening_started=\"true\" />\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"C:\\wamp64\\bin\\php\\php8.1.0\\php.exe\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2Yw9VfOUKroAdTzcjC14b4HtuP7\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"last_opened_file_path\": \"C:/Users/FAYE_Vi/Desktop/Cinema\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0ad0d41e-b68b-455a-8bb9-411039c4ee9c\" name=\"Changes\" comment=\"\" />\r\n      <created>1701425799886</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1701425799886</updated>\r\n      <workItem from=\"1701425800926\" duration=\"1865000\" />\r\n      <workItem from=\"1701434036657\" duration=\"1239000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	
+-+++ b/.idea/workspace.xml	
+-@@ -7,7 +7,6 @@
+-     <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="">
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-       <change beforePath="$PROJECT_DIR$/Selim/connexion.html" beforeDir="false" afterPath="$PROJECT_DIR$/Selim/connexion.html" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Victor/Inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/Victor/Inscription.php" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-@@ -36,7 +35,7 @@
+-     "RunOnceActivity.ShowReadmeOnStart": "true",
+-     "WebServerToolWindowFactoryState": "false",
+-     "git-widget-placeholder": "main",
+--    "last_opened_file_path": "C:/Users/FAYE_Vi/Desktop/Cinema",
+-+    "last_opened_file_path": "C:/Users/FAYE_Vi/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur",
+-     "node.js.detected.package.eslint": "true",
+-     "node.js.detected.package.tslint": "true",
+-     "node.js.selected.package.eslint": "(autodetect)",
+-@@ -53,7 +52,8 @@
+-       <option name="presentableId" value="Default" />
+-       <updated>1701425799886</updated>
+-       <workItem from="1701425800926" duration="1865000" />
+--      <workItem from="1701434036657" duration="1239000" />
+-+      <workItem from="1701434036657" duration="1241000" />
+-+      <workItem from="1701693467856" duration="29000" />
+-     </task>
+-     <servers />
+-   </component>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_37_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_37_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_37_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_37_[Changes]/shelved.patch	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,74 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0ad0d41e-b68b-455a-8bb9-411039c4ee9c\" name=\"Changes\" comment=\"Nouveau : Code php connection au site web\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Selim/Page Inscription/connexion.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Selim/Page Inscription/connexion.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;IRotcivI&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"d76929fc-e7d3-4648-8cac-4b1d586658ca\" />\r\n        <option name=\"url\" value=\"https://github.com/IRotcivI/Cinema.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"PhpDebugGeneral\" listening_started=\"true\" />\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"C:\\wamp64\\bin\\php\\php8.1.0\\php.exe\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2Yw9VfOUKroAdTzcjC14b4HtuP7\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"last_opened_file_path\": \"C:/Users/fayed/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  },\r\n  \"keyToStringList\": {\r\n    \"DatabaseDriversLRU\": [\r\n      \"mysql\"\r\n    ]\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\fayed\\Desktop\\Projet\\Cinema\\Victor\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0ad0d41e-b68b-455a-8bb9-411039c4ee9c\" name=\"Changes\" comment=\"\" />\r\n      <created>1701425799886</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1701425799886</updated>\r\n      <workItem from=\"1701425800926\" duration=\"1865000\" />\r\n      <workItem from=\"1701434036657\" duration=\"1239000\" />\r\n      <workItem from=\"1701450338019\" duration=\"2550000\" />\r\n      <workItem from=\"1701452902386\" duration=\"2786000\" />\r\n      <workItem from=\"1701525153157\" duration=\"7137000\" />\r\n      <workItem from=\"1701857558685\" duration=\"378000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701457568573</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701457568573</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Nouveau : Code php connection au site web\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701532273448</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701532273448</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné\" />\r\n    <MESSAGE value=\"Nouveau : Code php connection au site web\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Nouveau : Code php connection au site web\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision c825b1429146e466b038507c8e018857d967f8e5)
+-+++ b/.idea/workspace.xml	(date 1702021022351)
+-@@ -6,7 +6,6 @@
+-   <component name="ChangeListManager">
+-     <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Nouveau : Code php connection au site web">
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/Selim/Page Inscription/connexion.html" beforeDir="false" afterPath="$PROJECT_DIR$/Selim/Page Inscription/connexion.html" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-@@ -54,28 +53,28 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent"><![CDATA[{
+--  "keyToString": {
+--    "DefaultHtmlFileTemplate": "HTML File",
+--    "RunOnceActivity.OpenProjectViewOnStart": "true",
+--    "RunOnceActivity.ShowReadmeOnStart": "true",
+--    "WebServerToolWindowFactoryState": "false",
+--    "git-widget-placeholder": "main",
+--    "last_opened_file_path": "C:/Users/fayed/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur",
+--    "list.type.of.created.stylesheet": "CSS",
+--    "node.js.detected.package.eslint": "true",
+--    "node.js.detected.package.tslint": "true",
+--    "node.js.selected.package.eslint": "(autodetect)",
+--    "node.js.selected.package.tslint": "(autodetect)",
+--    "settings.editor.selected.configurable": "preferences.pluginManager",
+--    "vue.rearranger.settings.migration": "true"
+-+  <component name="PropertiesComponent">{
+-+  &quot;keyToString&quot;: {
+-+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+-+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fayed/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur&quot;,
+-+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+-+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+-+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-   },
+--  "keyToStringList": {
+--    "DatabaseDriversLRU": [
+--      "mysql"
+-+  &quot;keyToStringList&quot;: {
+-+    &quot;DatabaseDriversLRU&quot;: [
+-+      &quot;mysql&quot;
+-     ]
+-   }
+--}]]></component>
+-+}</component>
+-   <component name="RecentsManager">
+-     <key name="MoveFile.RECENT_KEYS">
+-       <recent name="C:\Users\fayed\Desktop\Projet\Cinema\Victor" />
+-@@ -95,6 +94,7 @@
+-       <workItem from="1701452902386" duration="2786000" />
+-       <workItem from="1701525153157" duration="7137000" />
+-       <workItem from="1701857558685" duration="378000" />
+-+      <workItem from="1702020157646" duration="859000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné">
+-       <option name="closed" value="true" />
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_14_55__Changes_1.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_14_55__Changes_1.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_14_55__Changes_1.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_14_55__Changes_1.xml	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_07_12_2023_14_55_[Changes]1" date="1701957408338" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_14_55_[Changes]1/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 07/12/2023 14:55 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: Page_Cinema/MENU/reduction/total_reduction.php
+===================================================================
+diff --git a/Page_Cinema/MENU/reduction/total_reduction.php b/Page_Cinema/MENU/reduction/total_reduction.php
+deleted file mode 100644
+--- a/Page_Cinema/MENU/reduction/total_reduction.php	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,10 +0,0 @@
+-<?php
+-
+-$bdd = new PDO('mysql:host=localhost:3306;dbname=crud;charset=utf8', 'root', '');
+-
+-$requete = $bdd->prepare("SELECT * FROM reduction");
+-$requete->execute();
+-$afficher = $requete->fetch();
+-var_dump($afficher);
+-echo $afficher("code");
+-$requete->closeCursor();
+Index: Page_Cinema/MENU/reduction/creation_reussi.html
+===================================================================
+diff --git a/Page_Cinema/MENU/reduction/creation_reussi.html b/Page_Cinema/MENU/reduction/creation_reussi.html
+deleted file mode 100644
+--- a/Page_Cinema/MENU/reduction/creation_reussi.html	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,18 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Title</title>
+-</head>
+-<body>
+-
+-<p>
+-    Creation du code de reduction reussi !
+-</p>
+-
+-<form method="post" action="total_reduction.php">
+-<input type = "submit" value = "afficher toute les reductions"/>
+-
+-</form>
+-</body>
+-</html>
+\ No newline at end of file
+Index: Page_Cinema/MENU/Admin/Seance.php
+===================================================================
+diff --git a/Page_Cinema/MENU/Admin/Seance.php b/Page_Cinema/MENU/Admin/Seance.php
+deleted file mode 100644
+--- a/Page_Cinema/MENU/Admin/Seance.php	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,78 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>ADMIN</title>
+-</head>
+-<body>
+-<form method="post" action="">
+-    <table>
+-        <tr>
+-            <td>
+-                Salle de projection :
+-            </td>
+-            <td>
+-                <?php
+-                //VARIABLES
+-                $bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+-                //CODE
+-                $requete = $bdd ->prepare('SELECT nom_salle,id_salle FROM salle_projection');
+-                $requete -> execute();
+-                $result = $requete->fetchAll();
+-                ?>
+-                <select name="salle">
+-                    <?php
+-                    foreach ($result as $el){
+-                        echo '<option value ='.$el['id_salle'].'/>'.$el['nom_salle'].'</option>';
+-                    }
+-                    ?>
+-                </select>
+-            </td>
+-        </tr>
+-
+-        <tr>
+-            <td>
+-                Film :
+-            </td>
+-            <td>
+-                <?php
+-                //VARIABLES
+-                $bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+-                //CODE
+-                $requete = $bdd ->prepare('SELECT nom,id_film FROM film');
+-                $requete -> execute();
+-                $result = $requete->fetchAll();
+-                ?>
+-                <select name="film">
+-                    <?php
+-                    foreach ($result as $el){
+-                        echo '<option value ='.$el['id_film'].'/>'.$el['nom'].'</option>';
+-                    }
+-                    ?>
+-                </select>
+-            </td>
+-        </tr>
+-
+-        <tr>
+-            <td>
+-                <input type="submit" value="Attribuer">
+-            </td>
+-        </tr>
+-    </table>
+-
+-</form>
+-</body>
+-</html>
+-
+-<?php
+-//VARIABLES
+-$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+-$film = $_POST['film'];
+-$salle = $_POST['salle'];
+-
+-//CODE
+-$requete = $bdd -> prepare('INSERT INTO seance (ref_film,ref_salle) VALUES (:film, :salle)');
+-$requete -> execute(array(
+-    'film' => $film,
+-    'salle' => $salle,
+-));
+Index: Page_Cinema/MENU/reduction/reduction.php
+===================================================================
+diff --git a/Page_Cinema/MENU/reduction/reduction.php b/Page_Cinema/MENU/reduction/reduction.php
+deleted file mode 100644
+--- a/Page_Cinema/MENU/reduction/reduction.php	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,18 +0,0 @@
+-<?php
+-var_dump($_POST);
+-//VARIABLES
+-$code = $_POST['code'];
+-$date_exp = $_POST['date_exp'];
+-$pourcentage = $_POST['pourcentage'];
+-$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');
+-
+-//CODE
+-
+-$requete = $bdd->prepare('INSERT INTO reduction (code,date_exp,pourcentage) VALUES (:code,:date_exp,:pourcentage)');
+-$requete->execute(array(
+-    'code' => $code,
+-    'date_exp' => $date_exp,
+-    'pourcentage' => $pourcentage,
+-    ));
+-header("Location: creation_reussi.html");
+-?>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_37__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_37__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_37__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_37__Changes_.xml	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_08_12_2023_08_37_[Changes]" date="1702021060634" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_37_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 08/12/2023 08:37 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: Page_Cinema/MENU/Admin/film/correct.html
+===================================================================
+diff --git a/Page_Cinema/MENU/Admin/film/correct.html b/Page_Cinema/MENU/Admin/film/correct.html
+deleted file mode 100644
+--- a/Page_Cinema/MENU/Admin/film/correct.html	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,33 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>Inscription reussi</title>
+-
+-    <link rel="stylesheet" type="text/css" href="correct.css">
+-    <!--POLICE-->
+-    <link rel="preconnect" href="https://fonts.googleapis.com">
+-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+-
+-</head>
+-<body>
+-
+-
+-<main id="main" class="flexbox-col">
+-    <div id="card_container" data-offset="2">
+-        <div id="card">
+-            <div class="shine"></div>
+-            <div class="text-block">
+-                <h1>Film ajouté</h1>
+-
+-                <form action="../menu/admin.html" method="post">
+-                <input type="submit" value="Retour au menu">
+-                </form>
+-
+-            </div>
+-        </div>
+-    </div></main>
+-
+-</body>
+-</html>
+\ No newline at end of file
+Index: Page_Cinema/MENU/Admin/menu/admin.html
+===================================================================
+diff --git a/Page_Cinema/MENU/Admin/menu/admin.html b/Page_Cinema/MENU/Admin/menu/admin.html
+deleted file mode 100644
+--- a/Page_Cinema/MENU/Admin/menu/admin.html	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,59 +0,0 @@
+-<!doctype html>
+-<html lang="fr">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport"
+-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+-    <title>Admin</title>
+-
+-    <!--POLICE-->
+-    <link rel="preconnect" href="https://fonts.googleapis.com">
+-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+-
+-    <!--CSS/JS-->
+-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+-    <link href="style.css" rel="stylesheet">
+-
+-</head>
+-<body class="vh-100 overflow-hidden">
+-<!--Navbar-->
+-<nav class="navbar navbar-black navbar-expand-lg bg-transparent">
+-    <div class="container-fluid">
+-        <!--Nom-->
+-        <a class="navbar-brand text-white" href="#">Administration</a>
+-        <!--Acceuil-->
+-        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+-            <span class="navbar-toggler-icon"></span>
+-        </button>
+-        <!--Menu-->
+-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+-            <div class="offcanvas-header">
+-                <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+-            </div>
+-            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+-                <ul class="navbar-nav justify-content-center
+-                align-item-center fs-5 flex-grow-1 pe-3">
+-                    <li class="nav-item m-2">
+-                        <a class="nav-link text-white" href="../film/film.html">Film</a>
+-                    </li>
+-                    <li class="nav-item m-2">
+-                        <a class="nav-link text-white" href="#">Salle</a>
+-                    </li>
+-                    <li class="nav-item m-2">
+-                        <a class="nav-link text-white" href="#">Reservation</a>
+-                    </li>
+-                    <li class="nav-item m-2">
+-                        <a class="nav-link text-white" href="#">Autre</a>
+-                    </li>
+-                </ul>
+-            </div>
+-        </div>
+-    </div>
+-</nav>
+-
+-</body>
+-</html>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_25_[Changes]1/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_25_[Changes]1/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_25_[Changes]1/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_08_25_[Changes]1/shelved.patch	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,93 +0,0 @@
+-Index: Victor/.idea/vcs.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/Victor/.idea/vcs.xml b/Victor/.idea/vcs.xml
+---- a/Victor/.idea/vcs.xml	
+-+++ b/Victor/.idea/vcs.xml	
+-@@ -2,5 +2,6 @@
+- <project version="4">
+-   <component name="VcsDirectoryMappings">
+-     <mapping directory="" vcs="Git" />
+-+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+-   </component>
+- </project>
+-\ No newline at end of file
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0ad0d41e-b68b-455a-8bb9-411039c4ee9c\" name=\"Changes\" comment=\"Nouveau : Code php connection au site web\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"PhpDebugGeneral\" listening_started=\"true\" />\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"C:\\wamp64\\bin\\php\\php8.1.0\\php.exe\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2Yw9VfOUKroAdTzcjC14b4HtuP7\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"last_opened_file_path\": \"C:/Users/fayed/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  },\r\n  \"keyToStringList\": {\r\n    \"DatabaseDriversLRU\": [\r\n      \"mysql\"\r\n    ]\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\fayed\\Desktop\\Projet\\Cinema\\Victor\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0ad0d41e-b68b-455a-8bb9-411039c4ee9c\" name=\"Changes\" comment=\"\" />\r\n      <created>1701425799886</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1701425799886</updated>\r\n      <workItem from=\"1701425800926\" duration=\"1865000\" />\r\n      <workItem from=\"1701434036657\" duration=\"1239000\" />\r\n      <workItem from=\"1701450338019\" duration=\"2550000\" />\r\n      <workItem from=\"1701452902386\" duration=\"2786000\" />\r\n      <workItem from=\"1701525153157\" duration=\"6858000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701457568573</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701457568573</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Nouveau : Code php connection au site web\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701532273448</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701532273448</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné\" />\r\n    <MESSAGE value=\"Nouveau : Code php connection au site web\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Nouveau : Code php connection au site web\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	
+-+++ b/.idea/workspace.xml	
+-@@ -6,6 +6,8 @@
+-   <component name="ChangeListManager">
+-     <list default="true" id="0ad0d41e-b68b-455a-8bb9-411039c4ee9c" name="Changes" comment="Nouveau : Code php connection au site web">
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/Selim/connexion.html" beforeDir="false" afterPath="$PROJECT_DIR$/Selim/connexion.html" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/Victor/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Victor/.idea/vcs.xml" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-@@ -35,27 +37,27 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent"><![CDATA[{
+--  "keyToString": {
+--    "DefaultHtmlFileTemplate": "HTML File",
+--    "RunOnceActivity.OpenProjectViewOnStart": "true",
+--    "RunOnceActivity.ShowReadmeOnStart": "true",
+--    "WebServerToolWindowFactoryState": "false",
+--    "git-widget-placeholder": "main",
+--    "last_opened_file_path": "C:/Users/fayed/Dropbox/Victor_FAYE_Travail/1 - Programtion/JAVA/CRUD Utilisateur",
+--    "node.js.detected.package.eslint": "true",
+--    "node.js.detected.package.tslint": "true",
+--    "node.js.selected.package.eslint": "(autodetect)",
+--    "node.js.selected.package.tslint": "(autodetect)",
+--    "settings.editor.selected.configurable": "preferences.pluginManager",
+--    "vue.rearranger.settings.migration": "true"
+-+  <component name="PropertiesComponent">{
+-+  &quot;keyToString&quot;: {
+-+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+-+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-+    &quot;last_opened_file_path&quot;: &quot;C:/Users/selim/OneDrive/Bureau/Projet/Cinema&quot;,
+-+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+-+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-   },
+--  "keyToStringList": {
+--    "DatabaseDriversLRU": [
+--      "mysql"
+-+  &quot;keyToStringList&quot;: {
+-+    &quot;DatabaseDriversLRU&quot;: [
+-+      &quot;mysql&quot;
+-     ]
+-   }
+--}]]></component>
+-+}</component>
+-   <component name="RecentsManager">
+-     <key name="MoveFile.RECENT_KEYS">
+-       <recent name="C:\Users\fayed\Desktop\Projet\Cinema\Victor" />
+-@@ -74,6 +76,9 @@
+-       <workItem from="1701450338019" duration="2550000" />
+-       <workItem from="1701452902386" duration="2786000" />
+-       <workItem from="1701525153157" duration="6858000" />
+-+      <workItem from="1701764173656" duration="61000" />
+-+      <workItem from="1701798230027" duration="2083000" />
+-+      <workItem from="1702019944735" duration="367000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="Fix : Les donnés (Inscription) sont maintenent envoyer a la base de donné">
+-       <option name="closed" value="true" />
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_13_11__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_13_11__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_13_11__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_13_11__Changes_.xml	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ /dev/null	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_08_12_2023_13_11_[Changes]" date="1702037539623" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_12_2023_13_11_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 08/12/2023 13:11 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: Page_Cinema/CONNEXION_INSCRIPTION/Page_connexion/Connection.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\nsession_start();\r\n\r\n//VARIABLES\r\n$_SESSION['email'] = $email = $_POST['email'];\r\n$_SESSION ['mdp'] = $mdp = $_POST['mdp'];\r\n$bdd = new PDO('mysql:host=localhost:3306;dbname=vsa_cinema;charset=utf8', 'root', '');\r\n\r\n//CODE\r\n$requete = $bdd->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :mdp');\r\n$requete->execute(array(\r\n    'email'=>$email,\r\n    'mdp'=>$mdp,\r\n));\r\nif ($requete->rowCount() > 0 && isset($_SESSION['email']) && isset($_SESSION['mdp'])){\r\n    echo 'Vous etes connecter';\r\n}\r\nelse{\r\n    echo 'ERREUR DE CONNECTION';\r\n    echo '<form action=\"Cinema.html\">\r\n    <input type=\"submit\" value=\"Page Connection\"/><br>\r\n    </form>';\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Page_Cinema/CONNEXION_INSCRIPTION/Page_connexion/Connection.php b/Page_Cinema/CONNEXION_INSCRIPTION/Page_connexion/Connection.php
+--- a/Page_Cinema/CONNEXION_INSCRIPTION/Page_connexion/Connection.php	(revision d3fd68f0a1ba18e5283452a3b7fe4f91425c6280)
++++ b/Page_Cinema/CONNEXION_INSCRIPTION/Page_connexion/Connection.php	(date 1704206620576)
+@@ -14,6 +14,7 @@
+ ));
+ if ($requete->rowCount() > 0 && isset($_SESSION['email']) && isset($_SESSION['mdp'])){
+     echo 'Vous etes connecter';
++    header("Location: ../MENU/Utilisateur/menu/menu.php");
+ }
+ else{
+     echo 'ERREUR DE CONNECTION';

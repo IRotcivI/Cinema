@@ -1,5 +1,5 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2 - Corp.0
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
@@ -104,7 +104,7 @@ CREATE TABLE IF NOT EXISTS `salle_projection` (
 
 INSERT INTO `salle_projection` (`id_salle`, `nom_salle`, `nbr_place`, `dimension`) VALUES
 (2, 'Salle n°1', 150, '2D'),
-(3, 'Salle n°2', 220, '3D');
+(3, 'Salle n°2 - Corp', 220, '3D');
 
 -- --------------------------------------------------------
 
